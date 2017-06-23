@@ -72,3 +72,4 @@ for(var i=0;i<opt.navli_j.length;i++){
 	otherli:[["切换身份","href='switch_user.html'"],["账户设置","href='account_settings.html'"],["个人设置","href='#'"],["退出","href='login.html'"]],
 	newsimgsrc:"../images/appicon/",
 };
+
