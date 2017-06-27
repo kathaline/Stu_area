@@ -70,7 +70,8 @@
 .mt15{ margin-top:15px!important;}
 .mt20{ margin-top:20px!important;}
 .mb0{ margin-bottom:0px!important;}
-.mb5{ margin-bottom:5px!important;}
+.mb0{ margin-bottom:0px!important;}
+.mb1{ margin-bottom:1px!important;}
 .mb8{ margin-bottom:8px!important;}
 .mb10{ margin-bottom:10px!important;}
 .mb15{ margin-bottom:15px!important;}
@@ -115,6 +116,7 @@
 .pr10{ padding-right:10px!important;}
 .pr15{ padding-right:15px!important;}
 .pr20{ padding-right:20px!important;}
+.pr60{ padding-right:60px!important;}
 .pa0{ padding:0!important;}
 .pa5{ padding:5px!important;}
 .pa10{ padding:10px!important;}

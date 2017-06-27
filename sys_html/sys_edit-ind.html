@@ -11,7 +11,7 @@
 <link href="../js/bootstrap/3.3.0/css/bootstrap.css" rel="stylesheet">
 
 <!--全课云基础样式覆盖-->
-<link href="../css/iconfont.css" rel="stylesheet">
+<link rel="stylesheet" href="../iconfont/stu_area/iconfont.css">
 <link href="../css/qky_base.css" rel="stylesheet">
 <link href="../css/common.css" rel="stylesheet">
 
@@ -27,8 +27,8 @@
         
               
                <div class="pt15 pb15 clear">
-                  <div class="co_73 fz_12 fl"><i class="icon_area fz_14 mr5">&#xe835;</i><span>评价信息</span><i class="qkyicon_14 ml10 mr10">&#xe6b3;</i><span>评价体系</span><i class="qkyicon_14 ml10 mr10">&#xe6b3;</i><span>创建评价体系</span></div>
-                  <div class="fr mr5"><a href="sys_creat.html"><i class="icon_area">&#xe60b;</i>返回</a></div>
+                  <div class="co_73 fz_12 fl"><i class="icon_area area-shouye fz_14 mr5"></i><span>评价信息</span><i class="icon_area area-zuo1 fz_14 ml10 mr10"></i><span>评价体系</span><i class="icon_area area-zuo1 fz_14 ml10 mr10"></i><span>创建评价体系</span></div>
+                  <div class="fr mr5"><a href="sys_creat.html"><i class="icon_area area-fanhui"></i>返回</a></div>
                </div>
                <div class="qkycadr area_main mb20">
                  <div class="form-horizontal pa20">
@@ -37,55 +37,227 @@
                         <div class="input-group">
                           <input type="file" name="fileField" class="ycfile" id="fileField" size="28" onchange="document.getElementById('textfield').value=this.value">
                           <input type="text" name="textfield" class="form-control" id="textfield" placeholder="">
-                          <div class="input-group-addon"><i class="icon_area fz_14 mr5">&#xe60d;</i>浏览</div>
+                          <div class="input-group-addon"><i class="icon_area area-wjian fz_14 mr5"></i>浏览</div>
                         </div>
-                        <button type="button" class="btn btn-link"><i class="qkyicon_14 mr5">&#xe63c;</i>下载模板</button>
+                        <button type="button" class="btn btn-link"><i class="icon_area area-xiazai2 fz_14 mr5"></i>下载模板</button>
                     </form>
                     <div class="page-header mt15"></div>
                     <div class="table-responsive _sm">
-                       <table class="table table-striped">
-                        <thead>
+                       <table class="table table-striped mb1">
                          <tr>
-                          <th width="20%" class="text-center media-middle" scope="row">
-                            <div class="form-group has-feedback mb0 col-sm-12 mauto">
-                              <input type="text" class="form-control" id="inputSuccess5" aria-describedby="inputSuccess5Status">
-                              <span class=" form-control-feedback" aria-hidden="true">&nbsp;%</span>
+                          <th width="10%" class="text-center media-middle bg-info" scope="row" rowspan="2">
+                            <div class="form-group po_r mb0 mauto pa0">
+                              <input type="text" class="form-control pr15 pl5" >
+                              <span class="form-control-feedback pl10" aria-hidden="true">%</span>
                             </div>
                           </th>
-                          <td width="80%">
-                            <div class="panel-group" id="accordion">
-	<div class="panel panel-default">
-		<div class="panel-heading">
-			<h4 class="panel-title">
-				<a data-toggle="collapse" data-parent="#accordion" 
-				   href="#collapseOne">
-					点击我进行展开，再次点击我进行折叠。第 1 部分
-				</a>
-			</h4>
-		</div>
-		<div id="collapseOne" class="panel-collapse collapse in">
-			<div class="panel-body">
-				Nihil anim keffiyeh helvetica, craft beer labore wes anderson 
-				cred nesciunt sapiente ea proident. Ad vegan excepteur butcher 
-				vice lomo.
-			</div>
-		</div>
-	</div>
-	
-	
-</div>
+                          <td width="90%" class="cadr_htd">
+                            <div class="form-group ma0">
+                              <div class="col-sm-9 col-md-10 has-feedback">
+                                <input type="text" class="form-control" placeholder="一级指标">
+                                <span class="form-control-feedback mr5" aria-hidden="true"><strong class="fz_nwe">0</strong>/<strong class="co_93 fz_nwe">10</strong></span>
+                              </div>
+                              <div class="col-sm-3 col-md-2 pr0 text-right">
+                                <a class="icon_area area-zengjia mr20" title="新增二级指标"></a>
+                                <a class="icon_area area-shanchu mr20" title="删除此指标"></a>
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse00" aria-expanded="false" class="icon_area area-shouqi fz_20" title="展开收起"></a>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>                          
+                        <tr>
+                          <td class="pa0">
+                            <div id="collapse00" class="panel-collapse collapse">
+                                <div class="form-group ma0 pt15 pr5 pb15 pl20 bor-b">
+                                  <div class="col-sm-11 pr0">
+                                    <div class="col-sm-1 pa0">
+                                      <input type="text" class="form-control pr15 pl5" >
+                                      <span class="form-control-feedback pl10" aria-hidden="true">%</span>
+                                    </div>
+                                    <div class="col-sm-10 col-lg-3 has-feedback">
+                                      <input type="text" class="form-control" placeholder="二级指标">
+                                      <span class="form-control-feedback mr5" aria-hidden="true"><strong class="fz_nwe">0</strong>/<strong class="co_93 fz_nwe">10</strong></span>
+                                    </div>
+                                    <div class="col-sm-11 col-lg-8 has-feedback pa0 intr-2">
+                                      <input type="text" class="form-control pr60" placeholder="二级指标说明">
+                                      <span class="form-control-feedback num-wid text-right" aria-hidden="true"><strong class="fz_nwe">0</strong>/<strong class="co_93 fz_nwe">200</strong></span>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-1 text-right pt5">
+                                    <a class="icon_area area-shanchu" title="删除此指标"></a>
+                                  </div>
+                                </div>
+                                <div class="form-group ma0 pt15 pr5 pb15 pl20 bor-b">
+                                  <div class="col-sm-11 pr0">
+                                    <div class="col-sm-1 pa0">
+                                      <input type="text" class="form-control pr15 pl5" >
+                                      <span class="form-control-feedback pl10" aria-hidden="true">%</span>
+                                    </div>
+                                    <div class="col-sm-10 col-lg-3 has-feedback">
+                                      <input type="text" class="form-control" placeholder="二级指标">
+                                      <span class="form-control-feedback mr5" aria-hidden="true"><strong class="fz_nwe">0</strong>/<strong class="co_93 fz_nwe">10</strong></span>
+                                    </div>
+                                    <div class="col-sm-11 col-lg-8 has-feedback pa0 intr-2">
+                                      <input type="text" class="form-control pr60" placeholder="二级指标说明">
+                                      <span class="form-control-feedback num-wid text-right" aria-hidden="true"><strong class="fz_nwe">0</strong>/<strong class="co_93 fz_nwe">200</strong></span>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-1 text-right pt5">
+                                    <a class="icon_area area-shanchu" title="删除此指标"></a>
+                                  </div>
+                                </div>
+                            </div>
+                                
                           </td>
                         </tr>
-                        </thead>
-                      </table>
-
-                      
+                       </table>
+                       <table class="table table-striped mb1">
+                         <tr>
+                          <th width="10%" class="text-center media-middle bg-info" scope="row" rowspan="2">
+                            <div class="form-group po_r mb0 mauto pa0">
+                              <input type="text" class="form-control pr15 pl5" >
+                              <span class="form-control-feedback pl10" aria-hidden="true">%</span>
+                            </div>
+                          </th>
+                          <td width="90%" class="cadr_htd">
+                            <div class="form-group ma0">
+                              <div class="col-sm-9 col-md-10 has-feedback has-success">
+                                <input type="text" class="form-control" placeholder="一级指标" value="正确指标名称">
+                                <span class="form-control-feedback mr5" aria-hidden="true"><strong class="fz_nwe">6</strong>/<strong class="co_93 fz_nwe">10</strong></span>
+                              </div>
+                              <div class="col-sm-3 col-md-2 pr0 text-right">
+                                <a class="icon_area area-zengjia mr20" title="新增二级指标"></a>
+                                <a class="icon_area area-shanchu mr20" title="删除此指标"></a>
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse01" aria-expanded="false" class="icon_area area-shouqi fz_20" title="展开收起"></a>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>                          
+                        <tr>
+                          <td class="pa0">
+                            <div id="collapse01" class="panel-collapse collapse">
+                                <div class="form-group ma0 pt15 pr5 pb15 pl20 bor-b">
+                                  <div class="col-sm-11 pr0">
+                                    <div class="col-sm-1 pa0">
+                                      <input type="text" class="form-control pr15 pl5" >
+                                      <span class="form-control-feedback pl10" aria-hidden="true">%</span>
+                                    </div>
+                                    <div class="col-sm-10 col-lg-3 has-feedback">
+                                      <input type="text" class="form-control" placeholder="二级指标">
+                                      <span class="form-control-feedback mr5" aria-hidden="true"><strong class="fz_nwe">0</strong>/<strong class="co_93 fz_nwe">10</strong></span>
+                                    </div>
+                                    <div class="col-sm-11 col-lg-8 has-feedback pa0 intr-2">
+                                      <input type="text" class="form-control pr60" placeholder="二级指标说明">
+                                      <span class="form-control-feedback num-wid text-right" aria-hidden="true"><strong class="fz_nwe">0</strong>/<strong class="co_93 fz_nwe">200</strong></span>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-1 text-right pt5">
+                                    <a class="icon_area area-shanchu" title="删除此指标"></a>
+                                  </div>
+                                </div>
+                                <div class="form-group ma0 pt15 pr5 pb15 pl20 bor-b">
+                                  <div class="col-sm-11 pr0">
+                                    <div class="col-sm-1 pa0">
+                                      <input type="text" class="form-control pr15 pl5" >
+                                      <span class="form-control-feedback pl10" aria-hidden="true">%</span>
+                                    </div>
+                                    <div class="col-sm-10 col-lg-3 has-feedback">
+                                      <input type="text" class="form-control" placeholder="二级指标">
+                                      <span class="form-control-feedback mr5" aria-hidden="true"><strong class="fz_nwe">0</strong>/<strong class="co_93 fz_nwe">10</strong></span>
+                                    </div>
+                                    <div class="col-sm-11 col-lg-8 has-feedback pa0 intr-2">
+                                      <input type="text" class="form-control pr60" placeholder="二级指标说明">
+                                      <span class="form-control-feedback num-wid text-right" aria-hidden="true"><strong class="fz_nwe">0</strong>/<strong class="co_93 fz_nwe">200</strong></span>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-1 text-right pt5">
+                                    <a class="icon_area area-shanchu" title="删除此指标"></a>
+                                  </div>
+                                </div>
+                            </div>
+                                
+                          </td>
+                        </tr>
+                       </table>
+                       <table class="table table-striped mb1">
+                         <tr>
+                          <th width="10%" class="text-center media-middle bg-info" scope="row" rowspan="2">
+                            <div class="form-group po_r mb0 mauto pa0">
+                              <input type="text" class="form-control pr15 pl5" >
+                              <span class="form-control-feedback pl10" aria-hidden="true">%</span>
+                            </div>
+                          </th>
+                          <td width="90%" class="cadr_htd">
+                            <div class="form-group ma0">
+                              <div class="col-sm-9 col-md-10 has-feedback has-error">
+                                <input type="text" class="form-control" placeholder="一级指标" value="这是一条超出长度的评价指标">
+                                <span class="form-control-feedback mr5" aria-hidden="true"><strong class="fz_nwe">13</strong>/<strong class="co_93 fz_nwe">10</strong></span>
+                              </div>
+                              <div class="col-sm-3 col-md-2 pr0 text-right">
+                                <a class="icon_area area-zengjia mr20" title="新增二级指标"></a>
+                                <a class="icon_area area-shanchu mr20" title="删除此指标"></a>
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse02" aria-expanded="false" class="icon_area area-shouqi fz_20" title="展开收起"></a>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>                          
+                        <tr>
+                          <td class="pa0">
+                            <div id="collapse02" class="panel-collapse collapse">
+                                <div class="form-group ma0 pt15 pr5 pb15 pl20 bor-b">
+                                  <div class="col-sm-11 pr0">
+                                    <div class="col-sm-1 pa0">
+                                      <input type="text" class="form-control pr15 pl5" >
+                                      <span class="form-control-feedback pl10" aria-hidden="true">%</span>
+                                    </div>
+                                    <div class="col-sm-10 col-lg-3 has-feedback">
+                                      <input type="text" class="form-control" placeholder="二级指标">
+                                      <span class="form-control-feedback mr5" aria-hidden="true"><strong class="fz_nwe">0</strong>/<strong class="co_93 fz_nwe">10</strong></span>
+                                    </div>
+                                    <div class="col-sm-11 col-lg-8 has-feedback pa0 intr-2">
+                                      <input type="text" class="form-control pr60" placeholder="二级指标说明">
+                                      <span class="form-control-feedback num-wid text-right" aria-hidden="true"><strong class="fz_nwe">0</strong>/<strong class="co_93 fz_nwe">200</strong></span>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-1 text-right pt5">
+                                    <a class="icon_area area-shanchu" title="删除此指标"></a>
+                                  </div>
+                                </div>
+                                <div class="form-group ma0 pt15 pr5 pb15 pl20 bor-b">
+                                  <div class="col-sm-11 pr0">
+                                    <div class="col-sm-1 pa0">
+                                      <input type="text" class="form-control pr15 pl5" >
+                                      <span class="form-control-feedback pl10" aria-hidden="true">%</span>
+                                    </div>
+                                    <div class="col-sm-10 col-lg-3 has-feedback">
+                                      <input type="text" class="form-control" placeholder="二级指标">
+                                      <span class="form-control-feedback mr5" aria-hidden="true"><strong class="fz_nwe">0</strong>/<strong class="co_93 fz_nwe">10</strong></span>
+                                    </div>
+                                    <div class="col-sm-11 col-lg-8 has-feedback pa0 intr-2">
+                                      <input type="text" class="form-control pr60" placeholder="二级指标说明">
+                                      <span class="form-control-feedback num-wid text-right" aria-hidden="true"><strong class="fz_nwe">0</strong>/<strong class="co_93 fz_nwe">200</strong></span>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-1 text-right pt5">
+                                    <a class="icon_area area-shanchu" title="删除此指标"></a>
+                                  </div>
+                                </div>
+                            </div>
+                                
+                          </td>
+                        </tr>
+                       </table>
                     </div>
+                    <div class="row mt20 pt10 pb5">
+                      <div class="col-sm-6"><button type="button" class="btn btn-primary btn-lg btn-block fz_16"><i class="icon_area area-wuliaozu mr5"></i>指标库添加</button></div>
+                      <div class="col-sm-6"><button type="button" class="btn btn-info btn-lg btn-block fz_16"><i class="icon_area area-zengjia mr5"></i>新增一级指标</button></div>
+                    </div>
+                    <div class="page-header mt20"></div>
                     <div class="form-group pt10">
                       <div class="col-sm-12 text-center">
-                        <a class="btn btn-default"><i class="icon_area fz_14 mr5">&#xe61f;</i>暂存草稿箱</a>
-                        <a class="btn btn-default ml20"><i class="icon_area fz_14 mr5">&#xe61f;</i>保存不发布</a>
-                        <a href="" class="btn btn-primary ml20"><i class="qkyicon_14 mr5">&#xe60f;</i>保存并发布</a>
+                        <a class="btn btn-default"><i class="icon_area area-zancun fz_14 mr5"></i>暂存草稿箱</a>
+                        <a class="btn btn-default ml20"><i class="icon_area area-baocun fz_14 mr5"></i>保存不发布</a>
+                        <a href="" class="btn btn-primary ml20"><i class="icon_area area-fabu fz_14 mr5"></i>保存并发布</a>
                       </div>
                     </div>
                  </div>
