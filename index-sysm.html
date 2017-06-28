@@ -11,7 +11,7 @@
 <link href="js/bootstrap/3.3.0/css/bootstrap.css" rel="stylesheet">
 
 <!--全课云基础样式覆盖-->
-<link href="css/iconfont.css" rel="stylesheet">
+<link rel="stylesheet" href="iconfont/stu_area/iconfont.css">
 <link href="css/qky_base.css" rel="stylesheet">
 <link href="css/common.css" rel="stylesheet">
 
@@ -28,18 +28,15 @@
             <div class="container_left col-sm-2">
                 <div class="row">
                     <ul class="menu_l">
-                       <li><a href="#" class=" cur">评价体系</a></li>
-                       <li><a href="#">评价公告发布</a></li>
-                       <li><a href="#">学校公告发布</a></li>
+                       <li><a href="index-sysm.html" class="cur">评价体系</a></li>
+                       <li><a href="index++.html">信息发布</a></li>
+                       <li><a href="#">学校反馈管理</a></li>
                     </ul>
                 </div>
             </div>
             <div class="container_right col-sm-10 col-sm-offset-2">
-               <div class="pt15 pb15 ">
-               <h6 class="co_73"><i class="icon_area fz_14 mr5">&#xe835;</i><span>评价体系管理</span><i class="qkyicon_14 ml10 mr10">&#xe6b3;</i><span>评价体系信息</span><i class="qkyicon_14 ml10 mr10">&#xe6b3;</i><span>草稿箱</span></h6>
-               </div>
-               <div class="qkycadr pa20">
-                 
+               <div class="embed-responsive embed-responsive-4by3">
+                  <iframe class="embed-responsive-item" src="sys_html/sys_index.html"></iframe>
                </div>
             </div>
         </div> 
@@ -49,14 +46,11 @@
 <script src="js/sea.js"></script> 
 <script src="js/seaconfig2.0.js"></script> 
 <script>
-     seajs.use(["jq","bs","nav","gzgl/mygzt","datep"],function(j,b,n,mygzt,datep){
+     seajs.use(["jq","bs","nav"],function(j,b,n){
 		 opt.navli_j[0].isactive=true;
 		 $("#qkynav").qkynav(opt);	 
-		 mygzt.mygzt_run();
 
 	});
-	/*$(function() {$('#menu_l').metisMenu({toggle: false});});
-*/
     </script>
 </body>
 </html>

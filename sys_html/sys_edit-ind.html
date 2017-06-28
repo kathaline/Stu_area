@@ -21,250 +21,900 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body class="qkybody">
-<div id="qkynav"></div>
+<body class="areabody">
 <div class="container-fluid">
-        
-              
-               <div class="pt15 pb15 clear">
-                  <div class="co_73 fz_12 fl"><i class="icon_area area-shouye fz_14 mr5"></i><span>评价信息</span><i class="icon_area area-zuo1 fz_14 ml10 mr10"></i><span>评价体系</span><i class="icon_area area-zuo1 fz_14 ml10 mr10"></i><span>创建评价体系</span></div>
-                  <div class="fr mr5"><a href="sys_creat.html"><i class="icon_area area-fanhui"></i>返回</a></div>
-               </div>
-               <div class="qkycadr area_main mb20">
-                 <div class="form-horizontal pa20">
-                    <form class="form-inline">
-                        <label>参照模块以附件方式导入指标：</label>
-                        <div class="input-group">
-                          <input type="file" name="fileField" class="ycfile" id="fileField" size="28" onchange="document.getElementById('textfield').value=this.value">
-                          <input type="text" name="textfield" class="form-control" id="textfield" placeholder="">
-                          <div class="input-group-addon"><i class="icon_area area-wjian fz_14 mr5"></i>浏览</div>
+          
+   <div class="pt15 pb15 clear">
+      <div class="co_73 fz_12 fl"><i class="icon_area area-shouye fz_14 mr5"></i><span><a href="sys_index.html">评价信息</a></span><i class="icon_area area-zuo1 fz_14 ml10 mr10"></i><span><a href="sys_index.html">评价体系</a></span><i class="icon_area area-zuo1 fz_14 ml10 mr10"></i><span>创建评价体系</span></div>
+      <div class="fr mr5"><a href="sys_creat.html"><i class="icon_area area-fanhui"></i>返回</a></div>
+   </div>
+   <div class="qkycadr area_main mb20">
+     <div class="form-horizontal pa20">
+        <form class="form-inline">
+            <label>参照模块以附件方式导入指标：</label>
+            <div class="input-group">
+              <input type="file" name="fileField" class="ycfile" id="fileField" size="28" onchange="document.getElementById('textfield').value=this.value">
+              <input type="text" name="textfield" class="form-control" id="textfield" placeholder="">
+              <div class="input-group-addon"><i class="icon_area area-wjian fz_14 mr5"></i>浏览</div>
+            </div>
+            <button type="button" class="btn btn-link"><i class="icon_area area-xiazai2 fz_14 mr5"></i>下载模板</button>
+        </form>
+        <div class="page-header mt15"></div>
+        <div class="table-responsive _sm">
+           <table class="table table-striped mb1">
+             <tr>
+              <th width="10%" class="text-center media-middle bg-info" scope="row" rowspan="2">
+                <div class="form-group po_r mb0 mauto pa0">
+                  <input type="text" class="form-control pr15 pl5" >
+                  <span class="form-control-feedback pl10" aria-hidden="true">%</span>
+                </div>
+              </th>
+              <td width="90%" class="cadr_htd">
+                <div class="form-group ma0">
+                  <div class="col-sm-9 col-md-10 has-feedback">
+                    <input type="text" class="form-control" placeholder="一级指标">
+                    <span class="form-control-feedback mr5" aria-hidden="true"><strong class="fz_nwe">0</strong>/<strong class="co_93 fz_nwe">10</strong></span>
+                  </div>
+                  <div class="col-sm-3 col-md-2 pr0 text-right">
+                    <a class="icon_area area-zengjia mr20" title="新增二级指标"></a>
+                    <a class="icon_area area-shanchu mr20" title="删除此指标"></a>
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse00" aria-expanded="false" class="icon_area area-shouqi fz_20" title="展开收起"></a>
+                  </div>
+                </div>
+              </td>
+            </tr>                          
+            <tr>
+              <td class="pa0">
+                <div id="collapse00" class="panel-collapse collapse">
+                    <div class="form-group ma0 pt15 pr5 pb15 pl20 bor-b">
+                      <div class="col-sm-11 pr0">
+                        <div class="col-sm-1 pa0">
+                          <input type="text" class="form-control pr15 pl5" >
+                          <span class="form-control-feedback pl10" aria-hidden="true">%</span>
                         </div>
-                        <button type="button" class="btn btn-link"><i class="icon_area area-xiazai2 fz_14 mr5"></i>下载模板</button>
-                    </form>
-                    <div class="page-header mt15"></div>
-                    <div class="table-responsive _sm">
-                       <table class="table table-striped mb1">
-                         <tr>
-                          <th width="10%" class="text-center media-middle bg-info" scope="row" rowspan="2">
-                            <div class="form-group po_r mb0 mauto pa0">
-                              <input type="text" class="form-control pr15 pl5" >
-                              <span class="form-control-feedback pl10" aria-hidden="true">%</span>
-                            </div>
-                          </th>
-                          <td width="90%" class="cadr_htd">
-                            <div class="form-group ma0">
-                              <div class="col-sm-9 col-md-10 has-feedback">
-                                <input type="text" class="form-control" placeholder="一级指标">
-                                <span class="form-control-feedback mr5" aria-hidden="true"><strong class="fz_nwe">0</strong>/<strong class="co_93 fz_nwe">10</strong></span>
-                              </div>
-                              <div class="col-sm-3 col-md-2 pr0 text-right">
-                                <a class="icon_area area-zengjia mr20" title="新增二级指标"></a>
-                                <a class="icon_area area-shanchu mr20" title="删除此指标"></a>
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse00" aria-expanded="false" class="icon_area area-shouqi fz_20" title="展开收起"></a>
-                              </div>
-                            </div>
-                          </td>
-                        </tr>                          
-                        <tr>
-                          <td class="pa0">
-                            <div id="collapse00" class="panel-collapse collapse">
-                                <div class="form-group ma0 pt15 pr5 pb15 pl20 bor-b">
-                                  <div class="col-sm-11 pr0">
-                                    <div class="col-sm-1 pa0">
-                                      <input type="text" class="form-control pr15 pl5" >
-                                      <span class="form-control-feedback pl10" aria-hidden="true">%</span>
-                                    </div>
-                                    <div class="col-sm-10 col-lg-3 has-feedback">
-                                      <input type="text" class="form-control" placeholder="二级指标">
-                                      <span class="form-control-feedback mr5" aria-hidden="true"><strong class="fz_nwe">0</strong>/<strong class="co_93 fz_nwe">10</strong></span>
-                                    </div>
-                                    <div class="col-sm-11 col-lg-8 has-feedback pa0 intr-2">
-                                      <input type="text" class="form-control pr60" placeholder="二级指标说明">
-                                      <span class="form-control-feedback num-wid text-right" aria-hidden="true"><strong class="fz_nwe">0</strong>/<strong class="co_93 fz_nwe">200</strong></span>
-                                    </div>
-                                  </div>
-                                  <div class="col-sm-1 text-right pt5">
-                                    <a class="icon_area area-shanchu" title="删除此指标"></a>
-                                  </div>
-                                </div>
-                                <div class="form-group ma0 pt15 pr5 pb15 pl20 bor-b">
-                                  <div class="col-sm-11 pr0">
-                                    <div class="col-sm-1 pa0">
-                                      <input type="text" class="form-control pr15 pl5" >
-                                      <span class="form-control-feedback pl10" aria-hidden="true">%</span>
-                                    </div>
-                                    <div class="col-sm-10 col-lg-3 has-feedback">
-                                      <input type="text" class="form-control" placeholder="二级指标">
-                                      <span class="form-control-feedback mr5" aria-hidden="true"><strong class="fz_nwe">0</strong>/<strong class="co_93 fz_nwe">10</strong></span>
-                                    </div>
-                                    <div class="col-sm-11 col-lg-8 has-feedback pa0 intr-2">
-                                      <input type="text" class="form-control pr60" placeholder="二级指标说明">
-                                      <span class="form-control-feedback num-wid text-right" aria-hidden="true"><strong class="fz_nwe">0</strong>/<strong class="co_93 fz_nwe">200</strong></span>
-                                    </div>
-                                  </div>
-                                  <div class="col-sm-1 text-right pt5">
-                                    <a class="icon_area area-shanchu" title="删除此指标"></a>
-                                  </div>
-                                </div>
-                            </div>
-                                
-                          </td>
-                        </tr>
-                       </table>
-                       <table class="table table-striped mb1">
-                         <tr>
-                          <th width="10%" class="text-center media-middle bg-info" scope="row" rowspan="2">
-                            <div class="form-group po_r mb0 mauto pa0">
-                              <input type="text" class="form-control pr15 pl5" >
-                              <span class="form-control-feedback pl10" aria-hidden="true">%</span>
-                            </div>
-                          </th>
-                          <td width="90%" class="cadr_htd">
-                            <div class="form-group ma0">
-                              <div class="col-sm-9 col-md-10 has-feedback has-success">
-                                <input type="text" class="form-control" placeholder="一级指标" value="正确指标名称">
-                                <span class="form-control-feedback mr5" aria-hidden="true"><strong class="fz_nwe">6</strong>/<strong class="co_93 fz_nwe">10</strong></span>
-                              </div>
-                              <div class="col-sm-3 col-md-2 pr0 text-right">
-                                <a class="icon_area area-zengjia mr20" title="新增二级指标"></a>
-                                <a class="icon_area area-shanchu mr20" title="删除此指标"></a>
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse01" aria-expanded="false" class="icon_area area-shouqi fz_20" title="展开收起"></a>
-                              </div>
-                            </div>
-                          </td>
-                        </tr>                          
-                        <tr>
-                          <td class="pa0">
-                            <div id="collapse01" class="panel-collapse collapse">
-                                <div class="form-group ma0 pt15 pr5 pb15 pl20 bor-b">
-                                  <div class="col-sm-11 pr0">
-                                    <div class="col-sm-1 pa0">
-                                      <input type="text" class="form-control pr15 pl5" >
-                                      <span class="form-control-feedback pl10" aria-hidden="true">%</span>
-                                    </div>
-                                    <div class="col-sm-10 col-lg-3 has-feedback">
-                                      <input type="text" class="form-control" placeholder="二级指标">
-                                      <span class="form-control-feedback mr5" aria-hidden="true"><strong class="fz_nwe">0</strong>/<strong class="co_93 fz_nwe">10</strong></span>
-                                    </div>
-                                    <div class="col-sm-11 col-lg-8 has-feedback pa0 intr-2">
-                                      <input type="text" class="form-control pr60" placeholder="二级指标说明">
-                                      <span class="form-control-feedback num-wid text-right" aria-hidden="true"><strong class="fz_nwe">0</strong>/<strong class="co_93 fz_nwe">200</strong></span>
-                                    </div>
-                                  </div>
-                                  <div class="col-sm-1 text-right pt5">
-                                    <a class="icon_area area-shanchu" title="删除此指标"></a>
-                                  </div>
-                                </div>
-                                <div class="form-group ma0 pt15 pr5 pb15 pl20 bor-b">
-                                  <div class="col-sm-11 pr0">
-                                    <div class="col-sm-1 pa0">
-                                      <input type="text" class="form-control pr15 pl5" >
-                                      <span class="form-control-feedback pl10" aria-hidden="true">%</span>
-                                    </div>
-                                    <div class="col-sm-10 col-lg-3 has-feedback">
-                                      <input type="text" class="form-control" placeholder="二级指标">
-                                      <span class="form-control-feedback mr5" aria-hidden="true"><strong class="fz_nwe">0</strong>/<strong class="co_93 fz_nwe">10</strong></span>
-                                    </div>
-                                    <div class="col-sm-11 col-lg-8 has-feedback pa0 intr-2">
-                                      <input type="text" class="form-control pr60" placeholder="二级指标说明">
-                                      <span class="form-control-feedback num-wid text-right" aria-hidden="true"><strong class="fz_nwe">0</strong>/<strong class="co_93 fz_nwe">200</strong></span>
-                                    </div>
-                                  </div>
-                                  <div class="col-sm-1 text-right pt5">
-                                    <a class="icon_area area-shanchu" title="删除此指标"></a>
-                                  </div>
-                                </div>
-                            </div>
-                                
-                          </td>
-                        </tr>
-                       </table>
-                       <table class="table table-striped mb1">
-                         <tr>
-                          <th width="10%" class="text-center media-middle bg-info" scope="row" rowspan="2">
-                            <div class="form-group po_r mb0 mauto pa0">
-                              <input type="text" class="form-control pr15 pl5" >
-                              <span class="form-control-feedback pl10" aria-hidden="true">%</span>
-                            </div>
-                          </th>
-                          <td width="90%" class="cadr_htd">
-                            <div class="form-group ma0">
-                              <div class="col-sm-9 col-md-10 has-feedback has-error">
-                                <input type="text" class="form-control" placeholder="一级指标" value="这是一条超出长度的评价指标">
-                                <span class="form-control-feedback mr5" aria-hidden="true"><strong class="fz_nwe">13</strong>/<strong class="co_93 fz_nwe">10</strong></span>
-                              </div>
-                              <div class="col-sm-3 col-md-2 pr0 text-right">
-                                <a class="icon_area area-zengjia mr20" title="新增二级指标"></a>
-                                <a class="icon_area area-shanchu mr20" title="删除此指标"></a>
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse02" aria-expanded="false" class="icon_area area-shouqi fz_20" title="展开收起"></a>
-                              </div>
-                            </div>
-                          </td>
-                        </tr>                          
-                        <tr>
-                          <td class="pa0">
-                            <div id="collapse02" class="panel-collapse collapse">
-                                <div class="form-group ma0 pt15 pr5 pb15 pl20 bor-b">
-                                  <div class="col-sm-11 pr0">
-                                    <div class="col-sm-1 pa0">
-                                      <input type="text" class="form-control pr15 pl5" >
-                                      <span class="form-control-feedback pl10" aria-hidden="true">%</span>
-                                    </div>
-                                    <div class="col-sm-10 col-lg-3 has-feedback">
-                                      <input type="text" class="form-control" placeholder="二级指标">
-                                      <span class="form-control-feedback mr5" aria-hidden="true"><strong class="fz_nwe">0</strong>/<strong class="co_93 fz_nwe">10</strong></span>
-                                    </div>
-                                    <div class="col-sm-11 col-lg-8 has-feedback pa0 intr-2">
-                                      <input type="text" class="form-control pr60" placeholder="二级指标说明">
-                                      <span class="form-control-feedback num-wid text-right" aria-hidden="true"><strong class="fz_nwe">0</strong>/<strong class="co_93 fz_nwe">200</strong></span>
-                                    </div>
-                                  </div>
-                                  <div class="col-sm-1 text-right pt5">
-                                    <a class="icon_area area-shanchu" title="删除此指标"></a>
-                                  </div>
-                                </div>
-                                <div class="form-group ma0 pt15 pr5 pb15 pl20 bor-b">
-                                  <div class="col-sm-11 pr0">
-                                    <div class="col-sm-1 pa0">
-                                      <input type="text" class="form-control pr15 pl5" >
-                                      <span class="form-control-feedback pl10" aria-hidden="true">%</span>
-                                    </div>
-                                    <div class="col-sm-10 col-lg-3 has-feedback">
-                                      <input type="text" class="form-control" placeholder="二级指标">
-                                      <span class="form-control-feedback mr5" aria-hidden="true"><strong class="fz_nwe">0</strong>/<strong class="co_93 fz_nwe">10</strong></span>
-                                    </div>
-                                    <div class="col-sm-11 col-lg-8 has-feedback pa0 intr-2">
-                                      <input type="text" class="form-control pr60" placeholder="二级指标说明">
-                                      <span class="form-control-feedback num-wid text-right" aria-hidden="true"><strong class="fz_nwe">0</strong>/<strong class="co_93 fz_nwe">200</strong></span>
-                                    </div>
-                                  </div>
-                                  <div class="col-sm-1 text-right pt5">
-                                    <a class="icon_area area-shanchu" title="删除此指标"></a>
-                                  </div>
-                                </div>
-                            </div>
-                                
-                          </td>
-                        </tr>
-                       </table>
-                    </div>
-                    <div class="row mt20 pt10 pb5">
-                      <div class="col-sm-6"><button type="button" class="btn btn-primary btn-lg btn-block fz_16"><i class="icon_area area-wuliaozu mr5"></i>指标库添加</button></div>
-                      <div class="col-sm-6"><button type="button" class="btn btn-info btn-lg btn-block fz_16"><i class="icon_area area-zengjia mr5"></i>新增一级指标</button></div>
-                    </div>
-                    <div class="page-header mt20"></div>
-                    <div class="form-group pt10">
-                      <div class="col-sm-12 text-center">
-                        <a class="btn btn-default"><i class="icon_area area-zancun fz_14 mr5"></i>暂存草稿箱</a>
-                        <a class="btn btn-default ml20"><i class="icon_area area-baocun fz_14 mr5"></i>保存不发布</a>
-                        <a href="" class="btn btn-primary ml20"><i class="icon_area area-fabu fz_14 mr5"></i>保存并发布</a>
+                        <div class="col-sm-10 col-lg-3 has-feedback">
+                          <input type="text" class="form-control" placeholder="二级指标">
+                          <span class="form-control-feedback mr5" aria-hidden="true"><strong class="fz_nwe">0</strong>/<strong class="co_93 fz_nwe">10</strong></span>
+                        </div>
+                        <div class="col-sm-11 col-lg-8 has-feedback pa0 intr-2">
+                          <input type="text" class="form-control pr60" placeholder="二级指标说明">
+                          <span class="form-control-feedback num-wid text-right" aria-hidden="true"><strong class="fz_nwe">0</strong>/<strong class="co_93 fz_nwe">200</strong></span>
+                        </div>
+                      </div>
+                      <div class="col-sm-1 text-right pt5">
+                        <a class="icon_area area-shanchu" title="删除此指标"></a>
                       </div>
                     </div>
-                 </div>
-               </div>
-            
-    </div>
-<div class="footer default">全通教育集团（广东）股份有限公司  版权所有  ©2007-2015</div>
+                    <div class="form-group ma0 pt15 pr5 pb15 pl20 bor-b">
+                      <div class="col-sm-11 pr0">
+                        <div class="col-sm-1 pa0">
+                          <input type="text" class="form-control pr15 pl5" >
+                          <span class="form-control-feedback pl10" aria-hidden="true">%</span>
+                        </div>
+                        <div class="col-sm-10 col-lg-3 has-feedback">
+                          <input type="text" class="form-control" placeholder="二级指标">
+                          <span class="form-control-feedback mr5" aria-hidden="true"><strong class="fz_nwe">0</strong>/<strong class="co_93 fz_nwe">10</strong></span>
+                        </div>
+                        <div class="col-sm-11 col-lg-8 has-feedback pa0 intr-2">
+                          <input type="text" class="form-control pr60" placeholder="二级指标说明">
+                          <span class="form-control-feedback num-wid text-right" aria-hidden="true"><strong class="fz_nwe">0</strong>/<strong class="co_93 fz_nwe">200</strong></span>
+                        </div>
+                      </div>
+                      <div class="col-sm-1 text-right pt5">
+                        <a class="icon_area area-shanchu" title="删除此指标"></a>
+                      </div>
+                    </div>
+                </div>
+                    
+              </td>
+            </tr>
+           </table>
+           <table class="table table-striped mb1">
+             <tr>
+              <th width="10%" class="text-center media-middle bg-info" scope="row" rowspan="2">
+                <div class="form-group po_r mb0 mauto pa0">
+                  <input type="text" class="form-control pr15 pl5" >
+                  <span class="form-control-feedback pl10" aria-hidden="true">%</span>
+                </div>
+              </th>
+              <td width="90%" class="cadr_htd">
+                <div class="form-group ma0">
+                  <div class="col-sm-9 col-md-10 has-feedback has-success">
+                    <input type="text" class="form-control" placeholder="一级指标" value="正确指标名称">
+                    <span class="form-control-feedback mr5" aria-hidden="true"><strong class="fz_nwe">6</strong>/<strong class="co_93 fz_nwe">10</strong></span>
+                  </div>
+                  <div class="col-sm-3 col-md-2 pr0 text-right">
+                    <a class="icon_area area-zengjia mr20" title="新增二级指标"></a>
+                    <a class="icon_area area-shanchu mr20" title="删除此指标"></a>
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse01" aria-expanded="false" class="icon_area area-shouqi fz_20" title="展开收起"></a>
+                  </div>
+                </div>
+              </td>
+            </tr>                          
+            <tr>
+              <td class="pa0">
+                <div id="collapse01" class="panel-collapse collapse">
+                    <div class="form-group ma0 pt15 pr5 pb15 pl20 bor-b">
+                      <div class="col-sm-11 pr0">
+                        <div class="col-sm-1 pa0">
+                          <input type="text" class="form-control pr15 pl5" >
+                          <span class="form-control-feedback pl10" aria-hidden="true">%</span>
+                        </div>
+                        <div class="col-sm-10 col-lg-3 has-feedback">
+                          <input type="text" class="form-control" placeholder="二级指标">
+                          <span class="form-control-feedback mr5" aria-hidden="true"><strong class="fz_nwe">0</strong>/<strong class="co_93 fz_nwe">10</strong></span>
+                        </div>
+                        <div class="col-sm-11 col-lg-8 has-feedback pa0 intr-2">
+                          <input type="text" class="form-control pr60" placeholder="二级指标说明">
+                          <span class="form-control-feedback num-wid text-right" aria-hidden="true"><strong class="fz_nwe">0</strong>/<strong class="co_93 fz_nwe">200</strong></span>
+                        </div>
+                      </div>
+                      <div class="col-sm-1 text-right pt5">
+                        <a class="icon_area area-shanchu" title="删除此指标"></a>
+                      </div>
+                    </div>
+                    <div class="form-group ma0 pt15 pr5 pb15 pl20 bor-b">
+                      <div class="col-sm-11 pr0">
+                        <div class="col-sm-1 pa0">
+                          <input type="text" class="form-control pr15 pl5" >
+                          <span class="form-control-feedback pl10" aria-hidden="true">%</span>
+                        </div>
+                        <div class="col-sm-10 col-lg-3 has-feedback">
+                          <input type="text" class="form-control" placeholder="二级指标">
+                          <span class="form-control-feedback mr5" aria-hidden="true"><strong class="fz_nwe">0</strong>/<strong class="co_93 fz_nwe">10</strong></span>
+                        </div>
+                        <div class="col-sm-11 col-lg-8 has-feedback pa0 intr-2">
+                          <input type="text" class="form-control pr60" placeholder="二级指标说明">
+                          <span class="form-control-feedback num-wid text-right" aria-hidden="true"><strong class="fz_nwe">0</strong>/<strong class="co_93 fz_nwe">200</strong></span>
+                        </div>
+                      </div>
+                      <div class="col-sm-1 text-right pt5">
+                        <a class="icon_area area-shanchu" title="删除此指标"></a>
+                      </div>
+                    </div>
+                </div>
+                    
+              </td>
+            </tr>
+           </table>
+           <table class="table table-striped mb1">
+             <tr>
+              <th width="10%" class="text-center media-middle bg-info" scope="row" rowspan="2">
+                <div class="form-group po_r mb0 mauto pa0">
+                  <input type="text" class="form-control pr15 pl5" >
+                  <span class="form-control-feedback pl10" aria-hidden="true">%</span>
+                </div>
+              </th>
+              <td width="90%" class="cadr_htd">
+                <div class="form-group ma0">
+                  <div class="col-sm-9 col-md-10 has-feedback has-error">
+                    <input type="text" class="form-control" placeholder="一级指标" value="这是一条超出长度的评价指标">
+                    <span class="form-control-feedback mr5" aria-hidden="true"><strong class="fz_nwe">13</strong>/<strong class="co_93 fz_nwe">10</strong></span>
+                  </div>
+                  <div class="col-sm-3 col-md-2 pr0 text-right">
+                    <a class="icon_area area-zengjia mr20" title="新增二级指标"></a>
+                    <a class="icon_area area-shanchu mr20" title="删除此指标"></a>
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse02" aria-expanded="false" class="icon_area area-shouqi fz_20" title="展开收起"></a>
+                  </div>
+                </div>
+              </td>
+            </tr>                          
+            <tr>
+              <td class="pa0">
+                <div id="collapse02" class="panel-collapse collapse">
+                    <div class="form-group ma0 pt15 pr5 pb15 pl20 bor-b">
+                      <div class="col-sm-11 pr0">
+                        <div class="col-sm-1 pa0">
+                          <input type="text" class="form-control pr15 pl5" >
+                          <span class="form-control-feedback pl10" aria-hidden="true">%</span>
+                        </div>
+                        <div class="col-sm-10 col-lg-3 has-feedback">
+                          <input type="text" class="form-control" placeholder="二级指标">
+                          <span class="form-control-feedback mr5" aria-hidden="true"><strong class="fz_nwe">0</strong>/<strong class="co_93 fz_nwe">10</strong></span>
+                        </div>
+                        <div class="col-sm-11 col-lg-8 has-feedback pa0 intr-2">
+                          <input type="text" class="form-control pr60" placeholder="二级指标说明">
+                          <span class="form-control-feedback num-wid text-right" aria-hidden="true"><strong class="fz_nwe">0</strong>/<strong class="co_93 fz_nwe">200</strong></span>
+                        </div>
+                      </div>
+                      <div class="col-sm-1 text-right pt5">
+                        <a class="icon_area area-shanchu" title="删除此指标"></a>
+                      </div>
+                    </div>
+                    <div class="form-group ma0 pt15 pr5 pb15 pl20 bor-b">
+                      <div class="col-sm-11 pr0">
+                        <div class="col-sm-1 pa0">
+                          <input type="text" class="form-control pr15 pl5" >
+                          <span class="form-control-feedback pl10" aria-hidden="true">%</span>
+                        </div>
+                        <div class="col-sm-10 col-lg-3 has-feedback">
+                          <input type="text" class="form-control" placeholder="二级指标">
+                          <span class="form-control-feedback mr5" aria-hidden="true"><strong class="fz_nwe">0</strong>/<strong class="co_93 fz_nwe">10</strong></span>
+                        </div>
+                        <div class="col-sm-11 col-lg-8 has-feedback pa0 intr-2">
+                          <input type="text" class="form-control pr60" placeholder="二级指标说明">
+                          <span class="form-control-feedback num-wid text-right" aria-hidden="true"><strong class="fz_nwe">0</strong>/<strong class="co_93 fz_nwe">200</strong></span>
+                        </div>
+                      </div>
+                      <div class="col-sm-1 text-right pt5">
+                        <a class="icon_area area-shanchu" title="删除此指标"></a>
+                      </div>
+                    </div>
+                </div>
+                    
+              </td>
+            </tr>
+           </table>
+        </div>
+        <div class="row mt20 pt10 pb5">
+          <div class="col-sm-6"><button type="button" class="btn btn-info btn-lg btn-block fz_16" data-toggle="modal" data-target="#library1"><i class="icon_area area-wuliaozu mr5"></i>指标库添加</button></div>
+          <div class="col-sm-6"><button type="button" class="btn btn-primary btn-lg btn-block fz_16"><i class="icon_area area-zengjia mr5"></i>新增一级指标</button></div>
+        </div>
+        <div class="page-header mt20"></div>
+        <div class="form-group pt10">
+          <div class="col-sm-12 text-center">
+            <a class="btn btn-default"><i class="icon_area area-zancun fz_14 mr5"></i>暂存草稿箱</a>
+            <a class="btn btn-default ml20"><i class="icon_area area-baocun fz_14 mr5"></i>保存不发布</a>
+            <a href="" class="btn btn-primary ml20"><i class="icon_area area-fabu fz_14 mr5"></i>保存并发布</a>
+          </div>
+        </div>
+     </div>
+   </div>
+        
+</div>
+
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="library1" tabindex="-1" role="dialog" aria-labelledby="library1Label" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content tab" role="tabpanel">
+			<div class="modal-header pa0">
+              <div class=" container-fluid">
+				<button type="button" class="close col-sm-1 text-right mt10" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+				<ul class="modal-title nav nav-tabs bor_nb col-sm-11" id="library1Label" role="tablist">
+                    <li role="presentation" class="active"><a href="#Section1" aria-controls="home" role="tab" data-toggle="tab">历史指标</a></li>
+                    <li role="presentation"><a href="#Section2" aria-controls="profile" role="tab" data-toggle="tab">公共指标库</a></li>
+                </ul>
+              </div>
+			</div>
+			<div class="modal-body">
+              <div class="tab-content tabs">
+                <div role="tabpanel" class="tab-pane fade in active" id="Section1">
+                     
+                      <div class="form-group mb0">
+                          <div class="col-sm-12 page-header pb15 mt0">
+                            <div class="col-sm-5 pa0">
+                                <div class="dropdown qkydropdown havechoose">
+                                  <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
+                                    <span class="value">全部学期</span>
+                                    <span class="icon_area area-zhankai"></span>
+                                  </a>
+                                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                    <li role="presentation"><a>全部学期</a></li>
+                                    <li role="presentation"><a>学年度第二学期回火学年度第二学期回火</a></li>
+                                    <li role="presentation"><a>2016-2017学年度第一学期日常评价</a></li>
+                                    <li role="presentation"><a>2015-2016学年度第二学期学期评价</a></li>
+                                    <li role="presentation"><a>2015-2016学年度第一期日常评价</a></li>
+                                    <li role="presentation"><a>全部学期</a></li>
+                                    <li role="presentation"><a>学年度第二学期回火学年度第二学期回火</a></li>
+                                    <li role="presentation"><a>2016-2017学年度第一学期日常评价</a></li>
+                                    <li role="presentation"><a>2015-2016学年度第二学期学期评价</a></li>
+                                    <li role="presentation"><a>2015-2016学年度第一期日常评价</a></li>
+                                    <li role="presentation"><a>全部学期</a></li>
+                                    <li role="presentation"><a>学年度第二学期回火学年度第二学期回火</a></li>
+                                    <li role="presentation"><a>2016-2017学年度第一学期日常评价</a></li>
+                                    <li role="presentation"><a>2015-2016学年度第二学期学期评价</a></li>
+                                    <li role="presentation"><a>2015-2016学年度第一期日常评价</a></li>
+                                    <li role="presentation"><a>全部学期</a></li>
+                                    <li role="presentation"><a>学年度第二学期回火学年度第二学期回火</a></li>
+                                    <li role="presentation"><a>2016-2017学年度第一学期日常评价</a></li>
+                                    <li role="presentation"><a>2015-2016学年度第二学期学期评价</a></li>
+                                    <li role="presentation"><a>2015-2016学年度第一期日常评价</a></li>
+                                    <li role="presentation"><a>全部学期</a></li>
+                                    <li role="presentation"><a>学年度第二学期回火学年度第二学期回火</a></li>
+                                    <li role="presentation"><a>2016-2017学年度第一学期日常评价</a></li>
+                                    <li role="presentation"><a>2015-2016学年度第二学期学期评价</a></li>
+                                    <li role="presentation"><a>2015-2016学年度第一期日常评价</a></li>
+                                    <li role="presentation"><a>全部学期</a></li>
+                                    <li role="presentation"><a>学年度第二学期回火学年度第二学期回火</a></li>
+                                    <li role="presentation"><a>2016-2017学年度第一学期日常评价</a></li>
+                                    <li role="presentation"><a>2015-2016学年度第二学期学期评价</a></li>
+                                    <li role="presentation"><a>2015-2016学年度第一期日常评价</a></li>
+                                    <li role="presentation"><a>全部学期</a></li>
+                                    <li role="presentation"><a>学年度第二学期回火学年度第二学期回火</a></li>
+                                    <li role="presentation"><a>2016-2017学年度第一学期日常评价</a></li>
+                                    <li role="presentation"><a>2015-2016学年度第二学期学期评价</a></li>
+                                    <li role="presentation"><a>2015-2016学年度第一期日常评价</a></li>
+                                    <li role="presentation"><a>全部学期</a></li>
+                                    <li role="presentation"><a>学年度第二学期回火学年度第二学期回火</a></li>
+                                    <li role="presentation"><a>2016-2017学年度第一学期日常评价</a></li>
+                                    <li role="presentation"><a>2015-2016学年度第二学期学期评价</a></li>
+                                    <li role="presentation"><a>2015-2016学年度第一期日常评价</a></li>
+                                    <li role="presentation"><a>全部学期</a></li>
+                                    <li role="presentation"><a>学年度第二学期回火学年度第二学期回火</a></li>
+                                    <li role="presentation"><a>2016-2017学年度第一学期日常评价</a></li>
+                                    <li role="presentation"><a>2015-2016学年度第二学期学期评价</a></li>
+                                    <li role="presentation"><a>2015-2016学年度第一期日常评价</a></li>
+                                    <li role="presentation"><a>全部学期</a></li>
+                                    <li role="presentation"><a>学年度第二学期回火学年度第二学期回火</a></li>
+                                    <li role="presentation"><a>2016-2017学年度第一学期日常评价</a></li>
+                                    <li role="presentation"><a>2015-2016学年度第二学期学期评价</a></li>
+                                    <li role="presentation"><a>2015-2016学年度第一期日常评价</a></li>
+                                    <li role="presentation"><a>全部学期</a></li>
+                                    <li role="presentation"><a>学年度第二学期回火学年度第二学期回火</a></li>
+                                    <li role="presentation"><a>2016-2017学年度第一学期日常评价</a></li>
+                                    <li role="presentation"><a>2015-2016学年度第二学期学期评价</a></li>
+                                    <li role="presentation"><a>2015-2016学年度第一期日常评价</a></li>
+                                    <li role="presentation"><a>全部学期</a></li>
+                                    <li role="presentation"><a>学年度第二学期回火学年度第二学期回火</a></li>
+                                    <li role="presentation"><a>2016-2017学年度第一学期日常评价</a></li>
+                                    <li role="presentation"><a>2015-2016学年度第二学期学期评价</a></li>
+                                    <li role="presentation"><a>2015-2016学年度第一期日常评价</a></li>
+                                    <li role="presentation"><a>全部学期</a></li>
+                                    <li role="presentation"><a>学年度第二学期回火学年度第二学期回火</a></li>
+                                    <li role="presentation"><a>2016-2017学年度第一学期日常评价</a></li>
+                                    <li role="presentation"><a>2015-2016学年度第二学期学期评价</a></li>
+                                    <li role="presentation"><a>2015-2016学年度第一期日常评价</a></li>
+                                    <li role="presentation"><a>全部学期</a></li>
+                                    <li role="presentation"><a>学年度第二学期回火学年度第二学期回火</a></li>
+                                    <li role="presentation"><a>2016-2017学年度第一学期日常评价</a></li>
+                                    <li role="presentation"><a>2015-2016学年度第二学期学期评价</a></li>
+                                    <li role="presentation"><a>2015-2016学年度第一期日常评价</a></li>
+                                  </ul>
+                                </div>
+                            </div>
+                            <div class="col-xs-4 has-feedback pr0">
+                              <input type="text" class="form-control" placeholder="关键字搜索">
+                              <a class="icon_area area-sousuo3 form-control-feedback" aria-hidden="true"></a>
+                            </div>
+                            <div class="col-sm-1 text-right pa0">
+                               <label class="checkbox-qky mb0 parent fz_nwe pl0" lj="checkbox_libs" isc="no"><a class="checkbox_a mt8 fl"><i class="icon_area area-gou fz_12"></i></a>全选</label>
+                            </div>
+                            <div class="col-sm-2 text-right pa0">
+                               <button type="button" class="btn btn-info"><i class="icon_area area-zengjia fz_14 mr5"></i>添加指标</button>
+                            </div>
+                          </div>
+                          <div class="col-sm-12 heig-in pa0">
+                            <div class="col-sm-4 mb10">
+                              <div class="input-group">
+                                <span class="input-group-addon pa0">
+                                  <label class="checkbox-qky child fz_nwe pl5" lj="checkbox_libs"><a class="checkbox_a mt5"><i class="icon_area area-gou fz_12"></i></a></label>
+                                </span>
+                                <input type="text" class="form-control" aria-label="..." value="评价指标最多有十个字" readonly>
+                                <span class="input-group-btn">
+                                  <a class="btn btn-default add-a" type="button" title="添加指标"><i class="icon_area area-zengjia fz_14"></i></a>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="col-sm-4 mb10">
+                              <div class="input-group">
+                                <span class="input-group-addon pa0">
+                                  <label class="checkbox-qky child fz_nwe pl5" lj="checkbox_libs"><a class="checkbox_a mt5"><i class="icon_area area-gou fz_12"></i></a></label>
+                                </span>
+                                <input type="text" class="form-control" aria-label="..." value="评价指标最多有十个字" readonly>
+                                <span class="input-group-btn">
+                                  <a class="btn btn-default add-a" type="button" title="添加指标"><i class="icon_area area-zengjia fz_14"></i></a>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="col-sm-4 mb10">
+                              <div class="input-group">
+                                <span class="input-group-addon pa0">
+                                  <label class="checkbox-qky child fz_nwe pl5" lj="checkbox_libs"><a class="checkbox_a mt5"><i class="icon_area area-gou fz_12"></i></a></label>
+                                </span>
+                                <input type="text" class="form-control" aria-label="..." value="评价指标最多有十个字" readonly>
+                                <span class="input-group-btn">
+                                  <a class="btn btn-default add-a" type="button" title="添加指标"><i class="icon_area area-zengjia fz_14"></i></a>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="col-sm-4 mb10">
+                              <div class="input-group">
+                                <span class="input-group-addon pa0">
+                                  <label class="checkbox-qky child fz_nwe pl5" lj="checkbox_libs"><a class="checkbox_a mt5"><i class="icon_area area-gou fz_12"></i></a></label>
+                                </span>
+                                <input type="text" class="form-control" aria-label="..." value="评价指标最多有十个字" readonly>
+                                <span class="input-group-btn">
+                                  <a class="btn btn-default add-a" type="button" title="添加指标"><i class="icon_area area-zengjia fz_14"></i></a>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="col-sm-4 mb10">
+                              <div class="input-group">
+                                <span class="input-group-addon pa0">
+                                  <label class="checkbox-qky child fz_nwe pl5" lj="checkbox_libs"><a class="checkbox_a mt5"><i class="icon_area area-gou fz_12"></i></a></label>
+                                </span>
+                                <input type="text" class="form-control" aria-label="..." value="评价指标最多有十个字" readonly>
+                                <span class="input-group-btn">
+                                  <a class="btn btn-default add-a" type="button" title="添加指标"><i class="icon_area area-zengjia fz_14"></i></a>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="col-sm-4 mb10">
+                              <div class="input-group">
+                                <span class="input-group-addon pa0">
+                                  <label class="checkbox-qky child fz_nwe pl5" lj="checkbox_libs"><a class="checkbox_a mt5"><i class="icon_area area-gou fz_12"></i></a></label>
+                                </span>
+                                <input type="text" class="form-control" aria-label="..." value="评价指标最多有十个字" readonly>
+                                <span class="input-group-btn">
+                                  <a class="btn btn-default add-a" type="button" title="添加指标"><i class="icon_area area-zengjia fz_14"></i></a>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="col-sm-4 mb10">
+                              <div class="input-group">
+                                <span class="input-group-addon pa0">
+                                  <label class="checkbox-qky child fz_nwe pl5" lj="checkbox_libs"><a class="checkbox_a mt5"><i class="icon_area area-gou fz_12"></i></a></label>
+                                </span>
+                                <input type="text" class="form-control" aria-label="..." value="评价指标最多有十个字" readonly>
+                                <span class="input-group-btn">
+                                  <a class="btn btn-default add-a" type="button" title="添加指标"><i class="icon_area area-zengjia fz_14"></i></a>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="col-sm-4 mb10">
+                              <div class="input-group">
+                                <span class="input-group-addon pa0">
+                                  <label class="checkbox-qky child fz_nwe pl5" lj="checkbox_libs"><a class="checkbox_a mt5"><i class="icon_area area-gou fz_12"></i></a></label>
+                                </span>
+                                <input type="text" class="form-control" aria-label="..." value="评价指标最多有十个字" readonly>
+                                <span class="input-group-btn">
+                                  <a class="btn btn-default add-a" type="button" title="添加指标"><i class="icon_area area-zengjia fz_14"></i></a>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="col-sm-4 mb10">
+                              <div class="input-group">
+                                <span class="input-group-addon pa0">
+                                  <label class="checkbox-qky child fz_nwe pl5" lj="checkbox_libs"><a class="checkbox_a mt5"><i class="icon_area area-gou fz_12"></i></a></label>
+                                </span>
+                                <input type="text" class="form-control" aria-label="..." value="评价指标最多有十个字" readonly>
+                                <span class="input-group-btn">
+                                  <a class="btn btn-default add-a" type="button" title="添加指标"><i class="icon_area area-zengjia fz_14"></i></a>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="col-sm-4 mb10">
+                              <div class="input-group">
+                                <span class="input-group-addon pa0">
+                                  <label class="checkbox-qky child fz_nwe pl5" lj="checkbox_libs"><a class="checkbox_a mt5"><i class="icon_area area-gou fz_12"></i></a></label>
+                                </span>
+                                <input type="text" class="form-control" aria-label="..." value="评价指标最多有十个字" readonly>
+                                <span class="input-group-btn">
+                                  <a class="btn btn-default add-a" type="button" title="添加指标"><i class="icon_area area-zengjia fz_14"></i></a>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="col-sm-4 mb10">
+                              <div class="input-group">
+                                <span class="input-group-addon pa0">
+                                  <label class="checkbox-qky child fz_nwe pl5" lj="checkbox_libs"><a class="checkbox_a mt5"><i class="icon_area area-gou fz_12"></i></a></label>
+                                </span>
+                                <input type="text" class="form-control" aria-label="..." value="评价指标最多有十个字" readonly>
+                                <span class="input-group-btn">
+                                  <a class="btn btn-default add-a" type="button" title="添加指标"><i class="icon_area area-zengjia fz_14"></i></a>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="col-sm-4 mb10">
+                              <div class="input-group">
+                                <span class="input-group-addon pa0">
+                                  <label class="checkbox-qky child fz_nwe pl5" lj="checkbox_libs"><a class="checkbox_a mt5"><i class="icon_area area-gou fz_12"></i></a></label>
+                                </span>
+                                <input type="text" class="form-control" aria-label="..." value="评价指标最多有十个字" readonly>
+                                <span class="input-group-btn">
+                                  <a class="btn btn-default add-a" type="button" title="添加指标"><i class="icon_area area-zengjia fz_14"></i></a>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="col-sm-4 mb10">
+                              <div class="input-group">
+                                <span class="input-group-addon pa0">
+                                  <label class="checkbox-qky child fz_nwe pl5" lj="checkbox_libs"><a class="checkbox_a mt5"><i class="icon_area area-gou fz_12"></i></a></label>
+                                </span>
+                                <input type="text" class="form-control" aria-label="..." value="评价指标最多有十个字" readonly>
+                                <span class="input-group-btn">
+                                  <a class="btn btn-default add-a" type="button" title="添加指标"><i class="icon_area area-zengjia fz_14"></i></a>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="col-sm-4 mb10">
+                              <div class="input-group">
+                                <span class="input-group-addon pa0">
+                                  <label class="checkbox-qky child fz_nwe pl5" lj="checkbox_libs"><a class="checkbox_a mt5"><i class="icon_area area-gou fz_12"></i></a></label>
+                                </span>
+                                <input type="text" class="form-control" aria-label="..." value="评价指标最多有十个字" readonly>
+                                <span class="input-group-btn">
+                                  <a class="btn btn-default add-a" type="button" title="添加指标"><i class="icon_area area-zengjia fz_14"></i></a>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="col-sm-4 mb10">
+                              <div class="input-group">
+                                <span class="input-group-addon pa0">
+                                  <label class="checkbox-qky child fz_nwe pl5" lj="checkbox_libs"><a class="checkbox_a mt5"><i class="icon_area area-gou fz_12"></i></a></label>
+                                </span>
+                                <input type="text" class="form-control" aria-label="..." value="评价指标最多有十个字" readonly>
+                                <span class="input-group-btn">
+                                  <a class="btn btn-default add-a" type="button" title="添加指标"><i class="icon_area area-zengjia fz_14"></i></a>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="col-sm-4 mb10">
+                              <div class="input-group">
+                                <span class="input-group-addon pa0">
+                                  <label class="checkbox-qky child fz_nwe pl5" lj="checkbox_libs"><a class="checkbox_a mt5"><i class="icon_area area-gou fz_12"></i></a></label>
+                                </span>
+                                <input type="text" class="form-control" aria-label="..." value="评价指标最多有十个字" readonly>
+                                <span class="input-group-btn">
+                                  <a class="btn btn-default add-a" type="button" title="添加指标"><i class="icon_area area-zengjia fz_14"></i></a>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="col-sm-4 mb10">
+                              <div class="input-group">
+                                <span class="input-group-addon pa0">
+                                  <label class="checkbox-qky child fz_nwe pl5" lj="checkbox_libs"><a class="checkbox_a mt5"><i class="icon_area area-gou fz_12"></i></a></label>
+                                </span>
+                                <input type="text" class="form-control" aria-label="..." value="评价指标最多有十个字" readonly>
+                                <span class="input-group-btn">
+                                  <a class="btn btn-default add-a" type="button" title="添加指标"><i class="icon_area area-zengjia fz_14"></i></a>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="col-sm-4 mb10">
+                              <div class="input-group">
+                                <span class="input-group-addon pa0">
+                                  <label class="checkbox-qky child fz_nwe pl5" lj="checkbox_libs"><a class="checkbox_a mt5"><i class="icon_area area-gou fz_12"></i></a></label>
+                                </span>
+                                <input type="text" class="form-control" aria-label="..." value="评价指标最多有十个字" readonly>
+                                <span class="input-group-btn">
+                                  <a class="btn btn-default add-a" type="button" title="添加指标"><i class="icon_area area-zengjia fz_14"></i></a>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="col-sm-4 mb10">
+                              <div class="input-group">
+                                <span class="input-group-addon pa0">
+                                  <label class="checkbox-qky child fz_nwe pl5" lj="checkbox_libs"><a class="checkbox_a mt5"><i class="icon_area area-gou fz_12"></i></a></label>
+                                </span>
+                                <input type="text" class="form-control" aria-label="..." value="评价指标最多有十个字" readonly>
+                                <span class="input-group-btn">
+                                  <a class="btn btn-default add-a" type="button" title="添加指标"><i class="icon_area area-zengjia fz_14"></i></a>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="col-sm-4 mb10">
+                              <div class="input-group">
+                                <span class="input-group-addon pa0">
+                                  <label class="checkbox-qky child fz_nwe pl5" lj="checkbox_libs"><a class="checkbox_a mt5"><i class="icon_area area-gou fz_12"></i></a></label>
+                                </span>
+                                <input type="text" class="form-control" aria-label="..." value="评价指标最多有十个字" readonly>
+                                <span class="input-group-btn">
+                                  <a class="btn btn-default add-a" type="button" title="添加指标"><i class="icon_area area-zengjia fz_14"></i></a>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="col-sm-4 mb10">
+                              <div class="input-group">
+                                <span class="input-group-addon pa0">
+                                  <label class="checkbox-qky child fz_nwe pl5" lj="checkbox_libs"><a class="checkbox_a mt5"><i class="icon_area area-gou fz_12"></i></a></label>
+                                </span>
+                                <input type="text" class="form-control" aria-label="..." value="评价指标最多有十个字" readonly>
+                                <span class="input-group-btn">
+                                  <a class="btn btn-default add-a" type="button" title="添加指标"><i class="icon_area area-zengjia fz_14"></i></a>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="col-sm-4 mb10">
+                              <div class="input-group">
+                                <span class="input-group-addon pa0">
+                                  <label class="checkbox-qky child fz_nwe pl5" lj="checkbox_libs"><a class="checkbox_a mt5"><i class="icon_area area-gou fz_12"></i></a></label>
+                                </span>
+                                <input type="text" class="form-control" aria-label="..." value="评价指标最多有十个字" readonly>
+                                <span class="input-group-btn">
+                                  <a class="btn btn-default add-a" type="button" title="添加指标"><i class="icon_area area-zengjia fz_14"></i></a>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="col-sm-4 mb10">
+                              <div class="input-group">
+                                <span class="input-group-addon pa0">
+                                  <label class="checkbox-qky child fz_nwe pl5" lj="checkbox_libs"><a class="checkbox_a mt5"><i class="icon_area area-gou fz_12"></i></a></label>
+                                </span>
+                                <input type="text" class="form-control" aria-label="..." value="评价指标最多有十个字" readonly>
+                                <span class="input-group-btn">
+                                  <a class="btn btn-default add-a" type="button" title="添加指标"><i class="icon_area area-zengjia fz_14"></i></a>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="col-sm-4 mb10">
+                              <div class="input-group">
+                                <span class="input-group-addon pa0">
+                                  <label class="checkbox-qky child fz_nwe pl5" lj="checkbox_libs"><a class="checkbox_a mt5"><i class="icon_area area-gou fz_12"></i></a></label>
+                                </span>
+                                <input type="text" class="form-control" aria-label="..." value="评价指标最多有十个字" readonly>
+                                <span class="input-group-btn">
+                                  <a class="btn btn-default add-a" type="button" title="添加指标"><i class="icon_area area-zengjia fz_14"></i></a>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="col-sm-4 mb10">
+                              <div class="input-group">
+                                <span class="input-group-addon pa0">
+                                  <label class="checkbox-qky child fz_nwe pl5" lj="checkbox_libs"><a class="checkbox_a mt5"><i class="icon_area area-gou fz_12"></i></a></label>
+                                </span>
+                                <input type="text" class="form-control" aria-label="..." value="评价指标最多有十个字" readonly>
+                                <span class="input-group-btn">
+                                  <a class="btn btn-default add-a" type="button" title="添加指标"><i class="icon_area area-zengjia fz_14"></i></a>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="col-sm-4 mb10">
+                              <div class="input-group">
+                                <span class="input-group-addon pa0">
+                                  <label class="checkbox-qky child fz_nwe pl5" lj="checkbox_libs"><a class="checkbox_a mt5"><i class="icon_area area-gou fz_12"></i></a></label>
+                                </span>
+                                <input type="text" class="form-control" aria-label="..." value="评价指标最多有十个字" readonly>
+                                <span class="input-group-btn">
+                                  <a class="btn btn-default add-a" type="button" title="添加指标"><i class="icon_area area-zengjia fz_14"></i></a>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="col-sm-4 mb10">
+                              <div class="input-group">
+                                <span class="input-group-addon pa0">
+                                  <label class="checkbox-qky child fz_nwe pl5" lj="checkbox_libs"><a class="checkbox_a mt5"><i class="icon_area area-gou fz_12"></i></a></label>
+                                </span>
+                                <input type="text" class="form-control" aria-label="..." value="评价指标最多有十个字" readonly>
+                                <span class="input-group-btn">
+                                  <a class="btn btn-default add-a" type="button" title="添加指标"><i class="icon_area area-zengjia fz_14"></i></a>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="col-sm-4 mb10">
+                              <div class="input-group">
+                                <span class="input-group-addon pa0">
+                                  <label class="checkbox-qky child fz_nwe pl5" lj="checkbox_libs"><a class="checkbox_a mt5"><i class="icon_area area-gou fz_12"></i></a></label>
+                                </span>
+                                <input type="text" class="form-control" aria-label="..." value="评价指标最多有十个字" readonly>
+                                <span class="input-group-btn">
+                                  <a class="btn btn-default add-a" type="button" title="添加指标"><i class="icon_area area-zengjia fz_14"></i></a>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="col-sm-4 mb10">
+                              <div class="input-group">
+                                <span class="input-group-addon pa0">
+                                  <label class="checkbox-qky child fz_nwe pl5" lj="checkbox_libs"><a class="checkbox_a mt5"><i class="icon_area area-gou fz_12"></i></a></label>
+                                </span>
+                                <input type="text" class="form-control" aria-label="..." value="评价指标最多有十个字" readonly>
+                                <span class="input-group-btn">
+                                  <a class="btn btn-default add-a" type="button" title="添加指标"><i class="icon_area area-zengjia fz_14"></i></a>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="col-sm-4 mb10">
+                              <div class="input-group">
+                                <span class="input-group-addon pa0">
+                                  <label class="checkbox-qky child fz_nwe pl5" lj="checkbox_libs"><a class="checkbox_a mt5"><i class="icon_area area-gou fz_12"></i></a></label>
+                                </span>
+                                <input type="text" class="form-control" aria-label="..." value="评价指标最多有十个字" readonly>
+                                <span class="input-group-btn">
+                                  <a class="btn btn-default add-a" type="button" title="添加指标"><i class="icon_area area-zengjia fz_14"></i></a>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="col-sm-4 mb10">
+                              <div class="input-group">
+                                <span class="input-group-addon pa0">
+                                  <label class="checkbox-qky child fz_nwe pl5" lj="checkbox_libs"><a class="checkbox_a mt5"><i class="icon_area area-gou fz_12"></i></a></label>
+                                </span>
+                                <input type="text" class="form-control" aria-label="..." value="评价指标最多有十个字" readonly>
+                                <span class="input-group-btn">
+                                  <a class="btn btn-default add-a" type="button" title="添加指标"><i class="icon_area area-zengjia fz_14"></i></a>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="col-sm-4 mb10">
+                              <div class="input-group">
+                                <span class="input-group-addon pa0">
+                                  <label class="checkbox-qky child fz_nwe pl5" lj="checkbox_libs"><a class="checkbox_a mt5"><i class="icon_area area-gou fz_12"></i></a></label>
+                                </span>
+                                <input type="text" class="form-control" aria-label="..." value="评价指标最多有十个字" readonly>
+                                <span class="input-group-btn">
+                                  <a class="btn btn-default add-a" type="button" title="添加指标"><i class="icon_area area-zengjia fz_14"></i></a>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="col-sm-4 mb10">
+                              <div class="input-group">
+                                <span class="input-group-addon pa0">
+                                  <label class="checkbox-qky child fz_nwe pl5" lj="checkbox_libs"><a class="checkbox_a mt5"><i class="icon_area area-gou fz_12"></i></a></label>
+                                </span>
+                                <input type="text" class="form-control" aria-label="..." value="评价指标最多有十个字" readonly>
+                                <span class="input-group-btn">
+                                  <a class="btn btn-default add-a" type="button" title="添加指标"><i class="icon_area area-zengjia fz_14"></i></a>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="col-sm-4 mb10">
+                              <div class="input-group">
+                                <span class="input-group-addon pa0">
+                                  <label class="checkbox-qky child fz_nwe pl5" lj="checkbox_libs"><a class="checkbox_a mt5"><i class="icon_area area-gou fz_12"></i></a></label>
+                                </span>
+                                <input type="text" class="form-control" aria-label="..." value="评价指标最多有十个字" readonly>
+                                <span class="input-group-btn">
+                                  <a class="btn btn-default add-a" type="button" title="添加指标"><i class="icon_area area-zengjia fz_14"></i></a>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="col-sm-4 mb10">
+                              <div class="input-group">
+                                <span class="input-group-addon pa0">
+                                  <label class="checkbox-qky child fz_nwe pl5" lj="checkbox_libs"><a class="checkbox_a mt5"><i class="icon_area area-gou fz_12"></i></a></label>
+                                </span>
+                                <input type="text" class="form-control" aria-label="..." value="评价指标最多有十个字" readonly>
+                                <span class="input-group-btn">
+                                  <a class="btn btn-default add-a" type="button" title="添加指标"><i class="icon_area area-zengjia fz_14"></i></a>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="col-sm-4 mb10">
+                              <div class="input-group">
+                                <span class="input-group-addon pa0">
+                                  <label class="checkbox-qky child fz_nwe pl5" lj="checkbox_libs"><a class="checkbox_a mt5"><i class="icon_area area-gou fz_12"></i></a></label>
+                                </span>
+                                <input type="text" class="form-control" aria-label="..." value="评价指标最多有十个字" readonly>
+                                <span class="input-group-btn">
+                                  <a class="btn btn-default add-a" type="button" title="添加指标"><i class="icon_area area-zengjia fz_14"></i></a>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="col-sm-4 mb10">
+                              <div class="input-group">
+                                <span class="input-group-addon pa0">
+                                  <label class="checkbox-qky child fz_nwe pl5" lj="checkbox_libs"><a class="checkbox_a mt5"><i class="icon_area area-gou fz_12"></i></a></label>
+                                </span>
+                                <input type="text" class="form-control" aria-label="..." value="评价指标最多有十个字" readonly>
+                                <span class="input-group-btn">
+                                  <a class="btn btn-default add-a" type="button" title="添加指标"><i class="icon_area area-zengjia fz_14"></i></a>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="col-sm-4 mb10">
+                              <div class="input-group">
+                                <span class="input-group-addon pa0">
+                                  <label class="checkbox-qky child fz_nwe pl5" lj="checkbox_libs"><a class="checkbox_a mt5"><i class="icon_area area-gou fz_12"></i></a></label>
+                                </span>
+                                <input type="text" class="form-control" aria-label="..." value="评价指标最多有十个字" readonly>
+                                <span class="input-group-btn">
+                                  <a class="btn btn-default add-a" type="button" title="添加指标"><i class="icon_area area-zengjia fz_14"></i></a>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="col-sm-4 mb10">
+                              <div class="input-group">
+                                <span class="input-group-addon pa0">
+                                  <label class="checkbox-qky child fz_nwe pl5" lj="checkbox_libs"><a class="checkbox_a mt5"><i class="icon_area area-gou fz_12"></i></a></label>
+                                </span>
+                                <input type="text" class="form-control" aria-label="..." value="评价指标最多有十个字" readonly>
+                                <span class="input-group-btn">
+                                  <a class="btn btn-default add-a" type="button" title="添加指标"><i class="icon_area area-zengjia fz_14"></i></a>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="col-sm-4 mb10">
+                              <div class="input-group">
+                                <span class="input-group-addon pa0">
+                                  <label class="checkbox-qky child fz_nwe pl5" lj="checkbox_libs"><a class="checkbox_a mt5"><i class="icon_area area-gou fz_12"></i></a></label>
+                                </span>
+                                <input type="text" class="form-control" aria-label="..." value="评价指标最多有十个字" readonly>
+                                <span class="input-group-btn">
+                                  <a class="btn btn-default add-a" type="button" title="添加指标"><i class="icon_area area-zengjia fz_14"></i></a>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="col-sm-4 mb10">
+                              <div class="input-group">
+                                <span class="input-group-addon pa0">
+                                  <label class="checkbox-qky child fz_nwe pl5" lj="checkbox_libs"><a class="checkbox_a mt5"><i class="icon_area area-gou fz_12"></i></a></label>
+                                </span>
+                                <input type="text" class="form-control" aria-label="..." value="评价指标最多有十个字" readonly>
+                                <span class="input-group-btn">
+                                  <a class="btn btn-default add-a" type="button" title="添加指标"><i class="icon_area area-zengjia fz_14"></i></a>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="col-sm-4 mb10">
+                              <div class="input-group">
+                                <span class="input-group-addon pa0">
+                                  <label class="checkbox-qky child fz_nwe pl5" lj="checkbox_libs"><a class="checkbox_a mt5"><i class="icon_area area-gou fz_12"></i></a></label>
+                                </span>
+                                <input type="text" class="form-control" aria-label="..." value="评价指标最多有十个字" readonly>
+                                <span class="input-group-btn">
+                                  <a class="btn btn-default add-a" type="button" title="添加指标"><i class="icon_area area-zengjia fz_14"></i></a>
+                                </span>
+                              </div>
+                            </div>
+                            
+                          </div><!--全部指标-->
+                      </div>
+                      <div class="form-group mb0 clear">
+                          <div class="col-sm-12 page-header pb15 mt20">
+                            <div class="col-sm-8 pa0 fz_16">已选指标</div>
+                            
+                            <div class="col-sm-2 text-right pa0">
+                               <label class="checkbox-qky mb0 parent fz_nwe pl0" lj="checkbox_haved" isc="no"><a class="checkbox_a mt8 fl"><i class="icon_area area-gou fz_12"></i></a>全选</label>
+                            </div>
+                            <div class="col-sm-2 text-right pa0">
+                               <button type="button" class="btn btn-info"><i class="icon_area area-guanbi1 fz_14 mr5"></i>删除指标</button>
+                            </div>
+                          </div>
+                          
+                          <div class="col-sm-12 heig-in pa0">
+                            <div class="alert fade in col-sm-4 mb10 pt0 pb0">
+                              <div class="input-group">
+                                <span class="input-group-addon pa0">
+                                  <label class="checkbox-qky child fz_nwe pl5" lj="checkbox_haved"><a class="checkbox_a mt5"><i class="icon_area area-gou fz_12"></i></a></label>
+                                </span>
+                                <input type="text" class="form-control" aria-label="..." value="评价指标最多有十个字" readonly>
+                                <span class="input-group-btn">
+                                  <button type="button" class="btn btn-default add-a" data-dismiss="alert" aria-label="Close" title="删除指标"><i aria-hidden="true" class="icon_area area-guanbi1 fz_14"></i></button>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="alert fade in col-sm-4 mb10 pt0 pb0">
+                              <div class="input-group">
+                                <span class="input-group-addon pa0">
+                                  <label class="checkbox-qky child fz_nwe pl5" lj="checkbox_haved"><a class="checkbox_a mt5"><i class="icon_area area-gou fz_12"></i></a></label>
+                                </span>
+                                <input type="text" class="form-control" aria-label="..." value="评价指标最多有十个字" readonly>
+                                <span class="input-group-btn">
+                                  <button type="button" class="btn btn-default add-a" data-dismiss="alert" aria-label="Close" title="删除指标"><i aria-hidden="true" class="icon_area area-guanbi1 fz_14"></i></button>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="alert fade in col-sm-4 mb10 pt0 pb0">
+                              <div class="input-group">
+                                <span class="input-group-addon pa0">
+                                  <label class="checkbox-qky child fz_nwe pl5" lj="checkbox_haved"><a class="checkbox_a mt5"><i class="icon_area area-gou fz_12"></i></a></label>
+                                </span>
+                                <input type="text" class="form-control" aria-label="..." value="评价指标最多有十个字" readonly>
+                                <span class="input-group-btn">
+                                  <button type="button" class="btn btn-default add-a" data-dismiss="alert" aria-label="Close" title="删除指标"><i aria-hidden="true" class="icon_area area-guanbi1 fz_14"></i></button>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="alert fade in col-sm-4 mb10 pt0 pb0">
+                              <div class="input-group">
+                                <span class="input-group-addon pa0">
+                                  <label class="checkbox-qky child fz_nwe pl5" lj="checkbox_haved"><a class="checkbox_a mt5"><i class="icon_area area-gou fz_12"></i></a></label>
+                                </span>
+                                <input type="text" class="form-control" aria-label="..." value="评价指标最多有十个字" readonly>
+                                <span class="input-group-btn">
+                                  <button type="button" class="btn btn-default add-a" data-dismiss="alert" aria-label="Close" title="删除指标"><i aria-hidden="true" class="icon_area area-guanbi1 fz_14"></i></button>
+                                </span>
+                              </div>
+                            </div>
+                            
+                          </div><!--已选指标-->
+                       </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="Section2">
+                     
+                </div>
+              </div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+				<button type="button" class="btn btn-primary">确认提交</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+</div>
+
 <!--模块化js--> 
 <script src="../js/sea.js"></script> 
 <script src="../js/seaconfig2.0.js"></script> 

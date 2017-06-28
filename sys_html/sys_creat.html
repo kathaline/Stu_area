@@ -21,149 +21,133 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body class="qkybody">
-<div id="qkynav"></div>
+<body class="areabody">
 <div class="container-fluid">
-        <div class="row">
-            <div class="container_left col-sm-2">
-                <div class="row">
-                    <ul class="menu_l">
-                       <li><a href="../index.html" class="cur">评价体系</a></li>
-                       <li><a href="#">信息发布</a></li>
-                       <li><a href="#">学校反馈管理</a></li>
-                    </ul>
-                </div>
+  
+   <div class="pt15 pb15 clear">
+      <div class="co_73 fz_12 fl"><i class="icon_area area-shouye fz_14 mr5"></i><span><a href="sys_index.html">评价信息</a></span><i class="icon_area area-zuo1 fz_14 ml10 mr10"></i><span><a href="sys_index.html">评价体系</a></span><i class="icon_area area-zuo1 fz_14 ml10 mr10"></i><span>创建评价体系</span></div>
+      <div class="fr mr5"><a href="sys_index.html"><i class="icon_area area-fanhui"></i>返回</a></div>
+   </div>
+   <div class="qkycadr area_main mb20">
+     <form class="form-horizontal pa20 mt20">
+      <div class="form-group">
+        <label for="inputEmail3" class="col-sm-2 text-right">评价学期</label>
+        <div class="col-sm-10">
+          2017-2018学年度第一学期
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-2 text-right pt5"><strong class="error_color mr5">*</strong>评价名称</label>
+        <div class="col-sm-10 col-md-10  has-feedback">
+          <div class="col-sm-10 col-md-7 pl0"><input type="text" class="form-control" id="inputSuccess1" aria-describedby="helpBlock2" value="" required></div>
+          <span id="helpBlock2" class="col-sm-10 col-md-5 help-block">请输入评价名称，不超过<strong>18</strong>个字。</span>
+        </div>
+      </div>
+      <!--这是正确的评价名称-->
+      <div class="form-group">
+        <label class="col-sm-2 text-right pt5"><strong class="error_color mr5">*</strong>评价名称</label>
+        <div class="col-sm-10 col-md-10 has-success  has-feedback">
+          <div class="col-sm-10 col-md-7 pl0"><input type="text" class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status" value="这是正确的评价名称">
+          <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span></div>
+          <span id="inputSuccess2Status" class="col-sm-10 col-md-5 help-block">请输入评价名称，不超过<strong>18</strong>个字。</span>
+        </div>
+      </div>
+      <!--这是错误的评价名称-->
+      <div class="form-group">
+        <label class="col-sm-2 text-right pt5"><strong class="error_color mr5">*</strong>评价名称</label>
+        <div class="col-sm-10 col-md-10 has-error has-feedback">
+          <div class="col-sm-10 col-md-7 pl0"><input type="text" class="form-control" id="inputError2" aria-describedby="inputError2Status" value="这是错误的评价名称啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊">
+          <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span></div>
+          <span id="inputError2Status" class="col-sm-10 col-md-5 help-block">请输入评价名称，不超过<strong>18</strong>个字。</span>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-2 text-right pt5"><strong class="error_color mr5">*</strong>评价类型</label>
+        <div class="col-sm-10">
+          <div class="radio pt0">
+           <label class="radio-qky clear radio-inline pt0 pl0"><a class="radio_a fl mr5"><b></b></a><span class="fr ml4">日常评价</span></label>
+           <label class="radio-qky clear radio-inline pt0"><a class="radio_a fl mr5"><b></b></a><span class="fr ml4">学期评价</span></label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-2 text-right pt5"><strong class="error_color mr5">*</strong>评分方式</label>
+        <div class="col-sm-10">
+          <div class="radio pt0">
+           <label class="radio-qky clear radio-inline pt0 pl0"><a class="radio_a fl mr5"><b></b></a><span class="fr ml4">百分制评分</span></label>
+           <label class="radio-qky clear radio-inline pt0"><a class="radio_a fl mr5"><b></b></a><span class="fr ml4">等第制评分</span></label>
+          </div>
+        </div>
+      </div>
+      <div class="page-header mt20"></div>
+      <div id="accordion">
+          <div class="form-group mb0">
+            <label class="col-sm-2 text-right pt5"><strong class="error_color mr5">*</strong>评价工作设置</label>
+            <div class="col-sm-10 mt5 co_73">（是否允许学校编辑指标使用）</div>
+            <div class="col-sm-10 mt5">
+              <div class="radio pt0">
+               <label class="radio-qky clear radio-inline pt0 pl0"><a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="radio_a fl mr5"><b></b></span><span class="co_33 fr ml4">否，不允许编辑指标</span></a></label>
+               <label class="radio-qky clear radio-inline pt0"><a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span class="radio_a fl mr5"><b></b></span><span class="co_33 fr ml4">是，允许编辑指标</span></a></label>
+              </div>
             </div>
-            <div class="container_right col-sm-10 col-sm-offset-2">
-              
-               <div class="pt15 pb15 clear">
-                  <div class="co_73 fz_12 fl"><i class="icon_area area-shouye fz_14 mr5"></i><span>评价信息</span><i class="icon_area area-zuo1 fz_14 ml10 mr10"></i><span>评价体系</span><i class="icon_area area-zuo1 fz_14 ml10 mr10"></i><span>创建评价体系</span></div>
-                  <div class="fr mr5"><a href="../index.html"><i class="icon_area area-fanhui"></i>返回</a></div>
-               </div>
-               <div class="qkycadr area_main mb20">
-                 <form class="form-horizontal pa20 mt20">
-                  <div class="form-group">
-                    <label for="inputEmail3" class="col-sm-2 text-right">评价学期</label>
-                    <div class="col-sm-10">
-                      2017-2018学年度第一学期
-                    </div>
+          </div>
+          <div class="panel mt10">
+            <div  id="collapseOne" class="panel-collapse collapse">
+              <div class="form-group"><div class="col-sm-2"></div>
+                 <div class="col-sm-10 col-md-9 mb10">
+                    <div class="form_tips bg-warning"><div class="arrow" style="left:40px"></div><div class="popover-content">选择否，则评价指标学校不能进行编辑，只可以设置适用年级直接启用</div></div>
+                 </div>
+              </div>
+              <div class="form-group mb0">
+                  <label class="col-sm-2 text-right pt5"><strong class="error_color mr5">*</strong>适用年级</label>
+                  <div class="col-sm-10 mt5">
+                    <label class="checkbox-qky mb0 parent fz_nwe" lj="checkbox_grader" isc="no"><a class="checkbox_a fl"><i class="icon_area area-gou fz_12"></i></a>全年级</label>
                   </div>
-                  <div class="form-group">
-                    <label class="col-sm-2 text-right pt5"><strong class="error_color mr5">*</strong>评价名称</label>
-                    <div class="col-sm-10 col-md-10  has-feedback">
-                      <div class="col-sm-10 col-md-7 pl0"><input type="text" class="form-control" id="inputSuccess1" aria-describedby="helpBlock2" value="" required></div>
-                      <span id="helpBlock2" class="col-sm-10 col-md-5 help-block">请输入评价名称，不超过<strong>18</strong>个字。</span>
-                    </div>
-                  </div>
-                  <!--这是正确的评价名称-->
-                  <div class="form-group">
-                    <label class="col-sm-2 text-right pt5"><strong class="error_color mr5">*</strong>评价名称</label>
-                    <div class="col-sm-10 col-md-10 has-success  has-feedback">
-                      <div class="col-sm-10 col-md-7 pl0"><input type="text" class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status" value="这是正确的评价名称">
-                      <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span></div>
-                      <span id="inputSuccess2Status" class="col-sm-10 col-md-5 help-block">请输入评价名称，不超过<strong>18</strong>个字。</span>
-                    </div>
-                  </div>
-                  <!--这是错误的评价名称-->
-                  <div class="form-group">
-                    <label class="col-sm-2 text-right pt5"><strong class="error_color mr5">*</strong>评价名称</label>
-                    <div class="col-sm-10 col-md-10 has-error has-feedback">
-                      <div class="col-sm-10 col-md-7 pl0"><input type="text" class="form-control" id="inputError2" aria-describedby="inputError2Status" value="这是错误的评价名称啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊">
-                      <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span></div>
-                      <span id="inputError2Status" class="col-sm-10 col-md-5 help-block">请输入评价名称，不超过<strong>18</strong>个字。</span>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label class="col-sm-2 text-right pt5"><strong class="error_color mr5">*</strong>评价类型</label>
-                    <div class="col-sm-10">
-                      <div class="radio pt0">
-                       <label class="radio-qky clear radio-inline pt0 pl0"><a class="radio_a fl mr5"><b></b></a><span class="fr ml4">日常评价</span></label>
-                       <label class="radio-qky clear radio-inline pt0"><a class="radio_a fl mr5"><b></b></a><span class="fr ml4">学期评价</span></label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label class="col-sm-2 text-right pt5"><strong class="error_color mr5">*</strong>评分方式</label>
-                    <div class="col-sm-10">
-                      <div class="radio pt0">
-                       <label class="radio-qky clear radio-inline pt0 pl0"><a class="radio_a fl mr5"><b></b></a><span class="fr ml4">百分制评分</span></label>
-                       <label class="radio-qky clear radio-inline pt0"><a class="radio_a fl mr5"><b></b></a><span class="fr ml4">等第制评分</span></label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="page-header mt20"></div>
-                  <div id="accordion">
-                      <div class="form-group mb0">
-                        <label class="col-sm-2 text-right pt5"><strong class="error_color mr5">*</strong>评价工作设置</label>
-                        <div class="col-sm-10 mt5 co_73">（是否允许学校编辑指标使用）</div>
-                        <div class="col-sm-10 mt5">
-                          <div class="radio pt0">
-                           <label class="radio-qky clear radio-inline pt0 pl0"><a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="radio_a fl mr5"><b></b></span><span class="co_33 fr ml4">否，不允许编辑指标</span></a></label>
-                           <label class="radio-qky clear radio-inline pt0"><a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span class="radio_a fl mr5"><b></b></span><span class="co_33 fr ml4">是，允许编辑指标</span></a></label>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="panel mt10">
-                        <div  id="collapseOne" class="panel-collapse collapse">
-                          <div class="form-group"><div class="col-sm-2"></div>
-                             <div class="col-sm-10 col-md-9 mb10">
-                                <div class="form_tips bg-warning"><div class="arrow" style="left:40px"></div><div class="popover-content">选择否，则评价指标学校不能进行编辑，只可以设置适用年级直接启用</div></div>
-                             </div>
-                          </div>
-                          <div class="form-group mb0">
-                              <label class="col-sm-2 text-right pt5"><strong class="error_color mr5">*</strong>适用年级</label>
-                              <div class="col-sm-10 mt5">
-                                <label class="checkbox-qky mb0 parent fz_nwe" lj="demo_checkbox" isc="no"><a class="checkbox_a mt0 fl"><i class="qkyicon_14"></i></a>全年级</label>
-                              </div>
-                              <div class="col-sm-10 mt10">
-                                <label class="checkbox-qky child col-sm-2 fz_nwe pl0" lj="demo_checkbox"><a class="checkbox_a mt0 fl"><i class="qkyicon_14"></i></a>一年级</label>
-                                <label class="checkbox-qky child col-sm-2 fz_nwe pl0" lj="demo_checkbox"><a class="checkbox_a mt0 fl"><i class="qkyicon_14"></i></a>一年级</label>
-                                <label class="checkbox-qky child col-sm-2 fz_nwe pl0" lj="demo_checkbox"><a class="checkbox_a mt0 fl"><i class="qkyicon_14"></i></a>一年级</label>
-                                <label class="checkbox-qky child col-sm-2 fz_nwe pl0" lj="demo_checkbox"><a class="checkbox_a mt0 fl"><i class="qkyicon_14"></i></a>一年级</label>
-                                <label class="checkbox-qky child col-sm-2 fz_nwe pl0" lj="demo_checkbox"><a class="checkbox_a mt0 fl"><i class="qkyicon_14"></i></a>一年级</label>
-                                <label class="checkbox-qky child col-sm-2 fz_nwe pl0" lj="demo_checkbox"><a class="checkbox_a mt0 fl"><i class="qkyicon_14"></i></a>一年级</label>
-                                <label class="checkbox-qky child col-sm-2 fz_nwe pl0" lj="demo_checkbox"><a class="checkbox_a mt0 fl"><i class="qkyicon_14"></i></a>一年级</label>
-                                <label class="checkbox-qky child col-sm-2 fz_nwe pl0" lj="demo_checkbox"><a class="checkbox_a mt0 fl"><i class="qkyicon_14"></i></a>一年级</label>
-                                <label class="checkbox-qky child col-sm-2 fz_nwe pl0" lj="demo_checkbox"><a class="checkbox_a mt0 fl"><i class="qkyicon_14"></i></a>一年级</label>
-                                <label class="checkbox-qky child col-sm-2 fz_nwe pl0" lj="demo_checkbox"><a class="checkbox_a mt0 fl"><i class="qkyicon_14"></i></a>一年级</label>
-                                <label class="checkbox-qky child col-sm-2 fz_nwe pl0" lj="demo_checkbox"><a class="checkbox_a mt0 fl"><i class="qkyicon_14"></i></a>一年级</label>
-                                <label class="checkbox-qky child col-sm-2 fz_nwe pl0" lj="demo_checkbox"><a class="checkbox_a mt0 fl"><i class="qkyicon_14"></i></a>一年级</label>
+                  <div class="col-sm-10 mt10">
+                    <label class="checkbox-qky child col-sm-2 fz_nwe pl0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="icon_area area-gou fz_12"></i></a>一年级</label>
+                    <label class="checkbox-qky child col-sm-2 fz_nwe pl0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="icon_area area-gou fz_12"></i></a>一年级</label>
+                    <label class="checkbox-qky child col-sm-2 fz_nwe pl0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="icon_area area-gou fz_12"></i></a>一年级</label>
+                    <label class="checkbox-qky child col-sm-2 fz_nwe pl0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="icon_area area-gou fz_12"></i></a>一年级</label>
+                    <label class="checkbox-qky child col-sm-2 fz_nwe pl0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="icon_area area-gou fz_12"></i></a>一年级</label>
+                    <label class="checkbox-qky child col-sm-2 fz_nwe pl0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="icon_area area-gou fz_12"></i></a>一年级</label>
+                    <label class="checkbox-qky child col-sm-2 fz_nwe pl0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="icon_area area-gou fz_12"></i></a>一年级</label>
+                    <label class="checkbox-qky child col-sm-2 fz_nwe pl0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="icon_area area-gou fz_12"></i></a>一年级</label>
+                    <label class="checkbox-qky child col-sm-2 fz_nwe pl0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="icon_area area-gou fz_12"></i></a>一年级</label>
+                    <label class="checkbox-qky child col-sm-2 fz_nwe pl0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="icon_area area-gou fz_12"></i></a>一年级</label>
+                    <label class="checkbox-qky child col-sm-2 fz_nwe pl0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="icon_area area-gou fz_12"></i></a>一年级</label>
+                    <label class="checkbox-qky child col-sm-2 fz_nwe pl0" lj="checkbox_grader"><a class="checkbox_a fl"><i class="icon_area area-gou fz_12"></i></a>一年级</label>
 
-                              </div>
-                          </div>
-                        </div>
-                        
-                        <div id="collapseTwo" class="panel-collapse collapse">
-                          <div class="form-group mb0"><div class="col-sm-2"></div>
-                             <div class="col-sm-10 col-md-9 mb10">
-                                <div class="form_tips bg-warning"><div class="arrow" style="left:220px"></div><div class="popover-content">选择是，则评价指标会以公共指标形式，提供给学校使用。学校通过系统指标库，自主创建适用指标。<span class="error_color">因自主创建存在指标差异性，可能会导致无法数据分析，请谨慎操作</span></div></div>
-                             </div>
-                          </div>
-                        </div>
-                      </div>
-
-                  </div>     
-                  <div class="page-header mt20"></div>
-                  <div class="form-group pt10">
-                    <div class="col-sm-12 text-center">
-                      <a class="btn btn-default"><i class="icon_area area-zancun fz_14 mr5"></i>暂存草稿箱</a>
-                      <a href="sys_edit-ind.html" class="btn btn-primary ml20"><i class="icon_area area-bianji fz_14 mr5"></i>编辑指标</a>
-                    </div>
                   </div>
-                </form>
-                
-               </div>
+              </div>
             </div>
-        </div> 
-    </div>
-<div class="footer default">全通教育集团（广东）股份有限公司  版权所有  ©2007-2015</div>
+            
+            <div id="collapseTwo" class="panel-collapse collapse">
+              <div class="form-group mb0"><div class="col-sm-2"></div>
+                 <div class="col-sm-10 col-md-9 mb10">
+                    <div class="form_tips bg-warning"><div class="arrow" style="left:220px"></div><div class="popover-content">选择是，则评价指标会以公共指标形式，提供给学校使用。学校通过系统指标库，自主创建适用指标。<span class="error_color">因自主创建存在指标差异性，可能会导致无法数据分析，请谨慎操作</span></div></div>
+                 </div>
+              </div>
+            </div>
+          </div>
+
+      </div>     
+      <div class="page-header mt20"></div>
+      <div class="form-group pt10">
+        <div class="col-sm-12 text-center">
+          <a class="btn btn-default"><i class="icon_area area-zancun fz_14 mr5"></i>暂存草稿箱</a>
+          <a href="sys_edit-ind.html" class="btn btn-primary ml20"><i class="icon_area area-bianji fz_14 mr5"></i>编辑指标</a>
+        </div>
+      </div>
+    </form>
+    
+   </div>
+</div>
 <!--模块化js--> 
 <script src="../js/sea.js"></script> 
 <script src="../js/seaconfig2.0.js"></script> 
 <script>
-     seajs.use(["jq","bs","nav","rach","dw"],function(j,b,n,rach,dw){
+     seajs.use(["jq","bs","rach","dw"],function(j,b,rach,dw){
 		 opt.navli_j[0].isactive=true;
-		 $("#qkynav").qkynav(opt);	 
 		 
          rach.rach_run(function(t){},function(t){});
 	});

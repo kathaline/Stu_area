@@ -72,6 +72,7 @@
 .mb0{ margin-bottom:0px!important;}
 .mb0{ margin-bottom:0px!important;}
 .mb1{ margin-bottom:1px!important;}
+.mb5{ margin-bottom:5px!important;}
 .mb8{ margin-bottom:8px!important;}
 .mb10{ margin-bottom:10px!important;}
 .mb15{ margin-bottom:15px!important;}
@@ -122,3 +123,5 @@
 .pa10{ padding:10px!important;}
 .pa15{ padding:15px!important;}
 .pa20{ padding:20px!important;}
+/*左边蓝色边线*/
+.bor-lb{ border-left:3px solid #27b0f2;}
