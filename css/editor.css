@@ -299,6 +299,3 @@ h1{
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc',endColorstr='#ff0077b3',GradientType=0);
 }
-.dropdown-menu>li>a{
-  cursor:pointer;
-  }
