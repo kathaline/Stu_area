@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="../qky2.ico">
+<title>学生综合素质评价</title>
+<link href="../js/bootstrap/3.3.0/css/bootstrap.css" rel="stylesheet">
+
+<!--全课云基础样式覆盖-->
+<link rel="stylesheet" href="../iconfont/stu_area/iconfont.css">
+<link href="../css/qky_base.css" rel="stylesheet">
+<link href="../css/common.css" rel="stylesheet">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<!--编辑器样式-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link href="../css/editor.css" type="text/css" rel="stylesheet"/>
+</head>
+<body class="areabody">
+<div class="container-fluid">
+  
+   <div class="pt15 pb15 clear">
+      <div class="co_73 fz_12 fl"><i class="icon_area area-shouye fz_14 mr5"></i><span><a href="sys_index.html">评价信息</a></span><i class="icon_area area-zuo1 fz_14 ml10 mr10"></i><span><a href="sys_Release.html">信息发布</a></span><i class="icon_area area-zuo1 fz_14 ml10 mr10"></i><span>发布评价公告</span></div>
+      <div class="fr mr5"><a href="sys_Release.html"><i class="icon_area area-fanhui"></i>返回</a></div>
+   </div>
+   <div class="qkycadr area_main mb20">
+     <form class="form-horizontal pa20 mt20">
+      <div class="form-group">
+        <label for="inputEmail3" class="col-sm-2 text-right pt5"><strong class="error_color mr5">*</strong>评价学期</label>
+        <div class="col-sm-10">
+          <div class="dropdown qkydropdown havechoose col-sm-10 pl0">
+            <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
+              <span class="value">2016-2017学年度第二学期期</span>
+              <span class="icon_area area-zhankai"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+              <li role="presentation"><a>全部学期</a></li>
+              <li role="presentation"><a>2016-2017学年度第二学期</a></li>
+              <li role="presentation"><a>2016-2017学年度第一学期</a></li>
+              <li role="presentation"><a>2015-2016学年度第二学期</a></li>
+              <li role="presentation"><a>2015-2016学年度第一学期</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-2 text-right pt5"><strong class="error_color mr5">*</strong>评价工作标题</label>
+        <div class="col-sm-10  has-feedback  has-success">
+          <div class="col-sm-10 pl0"><input type="text" class="form-control" id="inputSuccess1" aria-describedby="helpBlock2" value="2017-2018学年度第一学期日常评价标准指标" required>
+          <span class="form-control-feedback mr5" aria-hidden="true"><strong class="fz_nwe">24</strong>/<strong class="co_93 fz_nwe">25</strong></span></div>
+        </div>
+      </div>
+      <div class="form-group mb0">
+        <label class="col-sm-2 text-right pt5"><strong class="error_color mr5">*</strong>评价工作设置</label>
+      </div>
+      <div class="form-group mb0">
+        <div class="col-sm-12">
+                <div class="col-sm-10  col-sm-offset-1">
+                        <div class="row">
+                            <div class="col-lg-12 nopadding">
+                                <!--<textarea id="txtEditor"></textarea> -->
+                                <div class="row-fluid Editor-container"><div id="menuBarDiv" class="row-fluid"><div class="btn-group"><div class="btn-group" title="Fonts" style="cursor: pointer;"><a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)" title="Fonts" aria-expanded="false">Font<span class="caret"></span></a><ul class="dropdown-menu"><li><a tabindex="-1" href="javascript:void(0)">Sans serif</a></li><li><a tabindex="-1" href="javascript:void(0)">Serif</a></li><li><a tabindex="-1" href="javascript:void(0)">Wide</a></li><li><a tabindex="-1" href="javascript:void(0)">Narrow</a></li><li><a tabindex="-1" href="javascript:void(0)">Comic Sans MS</a></li><li><a tabindex="-1" href="javascript:void(0)">Courier New</a></li><li><a tabindex="-1" href="javascript:void(0)">Garamond</a></li><li><a tabindex="-1" href="javascript:void(0)">Georgia</a></li><li><a tabindex="-1" href="javascript:void(0)">Tahoma</a></li><li><a tabindex="-1" href="javascript:void(0)">Trebuchet MS</a></li><li><a tabindex="-1" href="javascript:void(0)">Verdana</a></li></ul></div><div class="btn-group" title="Paragraph Format" style="cursor: pointer;"><a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)" title="Paragraph Format" aria-expanded="false">Formatting<span class="caret"></span></a><ul class="dropdown-menu"><li><a tabindex="-1" href="javascript:void(0)">Heading 1</a></li><li><a tabindex="-1" href="javascript:void(0)">Heading 2</a></li><li><a tabindex="-1" href="javascript:void(0)">Heading 3</a></li><li><a tabindex="-1" href="javascript:void(0)">Heading 4</a></li><li><a tabindex="-1" href="javascript:void(0)">Heading 5</a></li><li><a tabindex="-1" href="javascript:void(0)">Heading 6</a></li><li><a tabindex="-1" href="javascript:void(0)">Paragraph</a></li></ul></div><div class="btn-group" title="Font Size" style="cursor: pointer;"><a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)" title="Font Size" aria-expanded="false">Font size<span class="caret"></span></a><ul class="dropdown-menu"><li><a tabindex="-1" href="javascript:void(0)">Small</a></li><li><a tabindex="-1" href="javascript:void(0)">Normal</a></li><li><a tabindex="-1" href="javascript:void(0)">Medium</a></li><li><a tabindex="-1" href="javascript:void(0)">Large</a></li><li><a tabindex="-1" href="javascript:void(0)">Huge</a></li></ul></div></div><div class="btn-group"><a href="javascript:void(0)" class="btn btn-default" title="Bold" style="cursor: pointer;"><i class="fa fa-bold"></i></a><a href="javascript:void(0)" class="btn btn-default" title="Italics" style="cursor: pointer;"><i class="fa fa-italic"></i></a><a href="javascript:void(0)" class="btn btn-default" title="Underline" style="cursor: pointer;"><i class="fa fa-underline"></i></a><a href="javascript:void(0)" class="btn btn-default" title="Text/Background Color" style="cursor: pointer;"><i class="fa fa-font"></i></a></div><div class="btn-group"><a href="javascript:void(0)" class="btn btn-default" title="Align Left" style="cursor: pointer;"><i class="fa fa-align-left"></i></a><a href="javascript:void(0)" class="btn btn-default" title="Align Center" style="cursor: pointer;"><i class="fa fa-align-center"></i></a><a href="javascript:void(0)" class="btn btn-default" title="Align Right" style="cursor: pointer;"><i class="fa fa-align-right"></i></a><a href="javascript:void(0)" class="btn btn-default" title="Justify" style="cursor: pointer;"><i class="fa fa-align-justify"></i></a></div><div class="btn-group"><a href="javascript:void(0)" class="btn btn-default" title="Increase Indent" style="cursor: pointer;"><i class="fa fa-indent"></i></a><a href="javascript:void(0)" class="btn btn-default" title="Decrease Indent" style="cursor: pointer;"><i class="fa fa-outdent"></i></a><a href="javascript:void(0)" class="btn btn-default" title="Block Quote" style="cursor: pointer;"><i class="fa fa-quote-right"></i></a><a href="javascript:void(0)" class="btn btn-default" title="Insert/Remove Numbered List" style="cursor: pointer;"><i class="fa fa-list-ol"></i></a><a href="javascript:void(0)" class="btn btn-default" title="Insert/Remove Bulleted List" style="cursor: pointer;"><i class="fa fa-list-ul"></i></a></div><div class="btn-group"><a href="javascript:void(0)" class="btn btn-default" title="Undo" style="cursor: pointer;"><i class="fa fa-undo"></i></a><a href="javascript:void(0)" class="btn btn-default" title="Redo" style="cursor: pointer;"><i class="fa fa-repeat"></i></a></div><div class="btn-group"><a href="#InsertLink" role="button" class="btn btn-default" data-toggle="modal" title="Insert Link"><i class="fa fa-link"></i></a><a href="javascript:void(0)" class="btn btn-default" title="Unlink" style="cursor: pointer;"><i class="fa fa-unlink"></i></a><a href="#InsertImage" role="button" class="btn btn-default" data-toggle="modal" title="Insert Image"><i class="fa fa-picture-o"></i></a><a href="#InsertTable" role="button" class="btn btn-default" data-toggle="modal" title="Insert Table"><i class="fa fa-table"></i></a></div><div class="btn-group"><a href="javascript:void(0)" class="btn btn-default" title="Strike Through" style="cursor: pointer;"><i class="fa fa-strikethrough"></i></a><a href="javascript:void(0)" class="btn btn-default" title="Horizontal Rule" style="cursor: pointer;"><i class="fa fa-minus"></i></a><a href="javascript:void(0)" class="btn btn-default" title="Insert Special Character" style="cursor: pointer;"><i class="fa fa-asterisk"></i></a></div><div class="btn-group"><a href="javascript:void(0)" class="btn btn-default" title="Print" style="cursor: pointer;"><i class="fa fa-print"></i></a><a href="javascript:void(0)" class="btn btn-default" title="Remove Formatting" style="cursor: pointer;"><i class="fa fa-eraser"></i></a><a href="javascript:void(0)" class="btn btn-default" title="Select All" style="cursor: pointer;"><i class="fa fa-file-text"></i></a><a href="javascript:void(0)" class="btn btn-default" title="Source" style="cursor: pointer;"><i class="fa fa-code"></i></a></div><div class="btn-group"><a href="javascript:void(0)" class="btn btn-default" title="Toggle Screen" style="cursor: pointer;"><i class="fa fa-arrows-alt"></i></a></div></div><div class="Editor-editor" contenteditable="true" style="overflow: auto;"><h3 style="text-align: center;">2017年中山市东区中小学上学期评价工作</h3><div><span style="font-family: &quot;Arial Negreta&quot;, &quot;Arial Normal&quot;, &quot;Arial&quot;; font-weight: 700;">摘要：</span><span style="font-family: &quot;Arial Normal&quot;, Arial;">教师是太阳底下最光辉的职业。她的光辉源于对人生、对事业、对学生的热爱。教师正是用自身的爱潜移默化地教育影响着学生，培养学生爱生活、爱他人、爱学习。</span><span style="font-family: &quot;Arial Normal&quot;, Arial;">&nbsp;&nbsp;</span><br></div><div><span style="font-family: &quot;Arial Normal&quot;, Arial;"><br></span></div><div><span style="font-family: &quot;Arial Negreta&quot;, &quot;Arial Normal&quot;, &quot;Arial&quot;; font-weight: 700;">关键词：</span><span style="font-family: &quot;Arial Normal&quot;, Arial;">教师，关爱学生，鼓励性评价方式，实效性，主体地位，健康发展，自尊心，上进心，骄傲自满，自高自大，目空一切。 &nbsp;&nbsp;</span><span style="font-family: &quot;Arial Normal&quot;, Arial;"><br></span></div><div><span style="font-family: &quot;Arial Normal&quot;, Arial;"><br></span></div><div><span style="font-family: &quot;Arial Normal&quot;, Arial;">以往的教育教学评价主要以教师评价为主，</span><span style="color: rgb(25, 158, 216); font-family: &quot;Arial Normal&quot;, Arial;">通常以打分的形式完成</span><span style="font-family: &quot;Arial Normal&quot;, Arial;">。长期以来，形成学习好的学生格外重视自己的成绩，学困生害怕看到自己的成绩。这样的评价实效性不强，离我校以爱育爱原则中的鼓励性评价方式更是相去甚远。在学习了学校的理念后，我想运用鼓励性评价方式，确立学生在评价中的主体地位，进行多角度、多方位的评价，让学生学习关注自我和相互关注，发现自己和他人的长处，在固定的时段内进行表扬，以促进下一阶段的学习。尤其对不同特点的学生也应确立不同的评价标准，以充分调动每个学生的学习积极性，保证每个学生的健康发展。</span><span style="font-family: &quot;Arial Normal&quot;, Arial;"><br></span></div></div><div id="statusbar" class="row-fluid" unselectable="on"><div class="label">Words : 9</div><div class="label">Characters : 409</div></div></div>
+                            </div>
+                        </div>
+                </div>
+        </div>
+      </div>
+      <div class="page-header mt20"></div>
+
+      <div class="form-group pt10">
+        <label for="inputEmail3" class="col-sm-2 text-right">关联的评价体系</label>
+        <div class="col-sm-10">
+              <div class="col-sm-10 col-lg-11 pl0">
+                 <div class="col-sm-4 col-lg-3 w-over pl0 mb5" title="2017-2018学年度第一学期日常评价">2017-2018学年度第一学期日常评价</div>
+                 <div class="col-sm-4 col-lg-3 w-over pl0 mb5" title="2017-2018学年度第一学期日常评价">2017-2018学年度第一学期日常评价</div>
+                 <div class="col-sm-4 col-lg-3 w-over pl0 mb5" title="2017-2018学年度第一学期日常评价">2017-2018学年度第一学期日常评价</div>
+                 <div class="col-sm-4 col-lg-3 w-over pl0 mb5" title="2017-2018学年度第一学期日常评价">2017-2018学年度第一学期日常评价</div>
+                 <div class="col-sm-4 col-lg-3 w-over pl0 mb5" title="2017-2018学年度第一学期日常评价">2017-2018学年度第一学期日常评价</div>
+              </div>
+        </div>
+      </div>
+      <div class="form-group pt10">
+        <label for="inputEmail3" class="col-sm-2 text-right pt5">附件</label>
+        <div class="col-sm-10">
+            <span class="alert fade in pa0 mr20" role="alert">
+               <i class="icon_area area-ziyuan fz_14 mr5"></i>
+               <a href="#"><u>2017年中山市东区中小学上学期评价工作.ppt</u></a>
+               <a href="#" class="icon_area area-shanchu ml10 fz_14" data-dismiss="alert" aria-label="Close"></a>
+            </span>
+            <a href="#" class="btn btn-default po_r">
+              <input type="file" name="fileField" class="ycfile" id="fileField" size="28" onchange="document.getElementById('textfield').value=this.value">
+              <i class="icon_area area-wjian fz_14 mr5"></i>重新上传
+            </a>
+        </div>
+      </div>
+
+      
+      
+      <div class="form-group mb0">
+          <label class="col-sm-2 text-right pt5">同步发给学校</label>
+          <div class="col-sm-10 mt5">
+            <label class="checkbox-qky mb0 parent fz_nwe" lj="checkbox_grader" isc="no"><a class="checkbox_a fl"><i class="icon_area area-gou fz_12"></i></a>全部学校</label>
+          </div>
+          <div class="col-sm-10 mt10">
+            <label class="checkbox-qky child col-sm-3 col-lg-2 fz_nwe pl0 w-over" lj="checkbox_grader" title="中山市第一中学"><a class="checkbox_a fl"><i class="icon_area area-gou fz_12"></i></a>中山市第一中学</label>
+            <label class="checkbox-qky child col-sm-3 col-lg-2 fz_nwe pl0 w-over" lj="checkbox_grader" title="中山市第2中学"><a class="checkbox_a fl"><i class="icon_area area-gou fz_12"></i></a>中山市第2中学</label>
+            <label class="checkbox-qky child col-sm-3 col-lg-2 fz_nwe pl0 w-over" lj="checkbox_grader" title="中山市第一中学"><a class="checkbox_a fl"><i class="icon_area area-gou fz_12"></i></a>中山市第一中学</label>
+            <label class="checkbox-qky child col-sm-3 col-lg-2 fz_nwe pl0 w-over" lj="checkbox_grader" title="中山市第2中学"><a class="checkbox_a fl"><i class="icon_area area-gou fz_12"></i></a>中山市第2中学</label>
+            <label class="checkbox-qky child col-sm-3 col-lg-2 fz_nwe pl0 w-over" lj="checkbox_grader" title="中山市东区白沙湾学校"><a class="checkbox_a fl"><i class="icon_area area-gou fz_12"></i></a>中山市东区白沙湾学校</label>
+            <label class="checkbox-qky child col-sm-3 col-lg-2 fz_nwe pl0 w-over" lj="checkbox_grader" title="中山市第一中学"><a class="checkbox_a fl"><i class="icon_area area-gou fz_12"></i></a>中山市第一中学</label>
+            <label class="checkbox-qky child col-sm-3 col-lg-2 fz_nwe pl0 w-over" lj="checkbox_grader" title="中山市第2中学"><a class="checkbox_a fl"><i class="icon_area area-gou fz_12"></i></a>中山市第2中学</label>
+            <label class="checkbox-qky child col-sm-3 col-lg-2 fz_nwe pl0 w-over" lj="checkbox_grader" title="中山市东区白沙湾学校"><a class="checkbox_a fl"><i class="icon_area area-gou fz_12"></i></a>中山市东区白沙湾学校</label>
+            <label class="checkbox-qky child col-sm-3 col-lg-2 fz_nwe pl0 w-over" lj="checkbox_grader" title="中山市第一中学"><a class="checkbox_a fl"><i class="icon_area area-gou fz_12"></i></a>中山市第一中学</label>
+            <label class="checkbox-qky child col-sm-3 col-lg-2 fz_nwe pl0 w-over" lj="checkbox_grader" title="中山市东区白沙湾学校"><a class="checkbox_a fl"><i class="icon_area area-gou fz_12"></i></a>中山市东区白沙湾学校</label>
+            <label class="checkbox-qky child col-sm-3 col-lg-2 fz_nwe pl0 w-over" lj="checkbox_grader" title="中山市第一中学"><a class="checkbox_a fl"><i class="icon_area area-gou fz_12"></i></a>中山市第一中学</label>
+            <label class="checkbox-qky child col-sm-3 col-lg-2 fz_nwe pl0 w-over" lj="checkbox_grader" title="中山市第2中学"><a class="checkbox_a fl"><i class="icon_area area-gou fz_12"></i></a>中山市第2中学</label>
+            <label class="checkbox-qky child col-sm-3 col-lg-2 fz_nwe pl0 w-over" lj="checkbox_grader" title="中山市东区白沙湾学校"><a class="checkbox_a fl"><i class="icon_area area-gou fz_12"></i></a>中山市东区白沙湾学校</label>
+            <label class="checkbox-qky child col-sm-3 col-lg-2 fz_nwe pl0 w-over" lj="checkbox_grader" title="中山市第一中学"><a class="checkbox_a fl"><i class="icon_area area-gou fz_12"></i></a>中山市第一中学</label>
+            <label class="checkbox-qky child col-sm-3 col-lg-2 fz_nwe pl0 w-over" lj="checkbox_grader" title="中山市第2中学"><a class="checkbox_a fl"><i class="icon_area area-gou fz_12"></i></a>中山市第2中学</label>
+            <label class="checkbox-qky child col-sm-3 col-lg-2 fz_nwe pl0 w-over" lj="checkbox_grader" title="中山市东区白沙湾学校"><a class="checkbox_a fl"><i class="icon_area area-gou fz_12"></i></a>中山市东区白沙湾学校</label>
+            <label class="checkbox-qky child col-sm-3 col-lg-2 fz_nwe pl0 w-over" lj="checkbox_grader" title="中山市第2中学"><a class="checkbox_a fl"><i class="icon_area area-gou fz_12"></i></a>中山市第2中学</label>
+            <label class="checkbox-qky child col-sm-3 col-lg-2 fz_nwe pl0 w-over" lj="checkbox_grader" title="中山市东区白沙湾学校"><a class="checkbox_a fl"><i class="icon_area area-gou fz_12"></i></a>中山市东区白沙湾学校</label>
+
+          </div>
+      </div>
+
+          
+      <div class="page-header mt20"></div>
+      <div class="form-group">
+          <label class="col-sm-2 text-right pt5"><i class="icon_area area-gantanhao text-warning mr5"></i>发布之后可同步至</label>
+          <div class="col-sm-10 mt5">
+            <label class="checkbox-qky child col-sm-3 col-lg-2 fz_nwe pl0 w-over" lj="checkbox_send" title="通过校园OA推送学校"><a class="checkbox_a fl"><i class="icon_area area-gou fz_12"></i></a>通过校园OA推送学校</label>
+            <label class="checkbox-qky child col-sm-3 col-lg-2 fz_nwe pl0 w-over" lj="checkbox_send" title="通过微校推送教师"><a class="checkbox_a fl"><i class="icon_area area-gou fz_12"></i></a>通过微校推送教师</label>
+
+
+          </div>
+      </div>
+
+      <div class="form-group pt10">
+        <div class="col-sm-12 text-center">
+          <a href="sys_Rel-browse.html" class="btn btn-default"><i class="icon_area area-chakan fz_14 mr5"></i>提前预览</a>
+          <a class="btn btn-default ml20"><i class="icon_area area-zancun fz_14 mr5"></i>暂存草稿箱</a>
+          <a href="sys_edit-ind.html" class="btn btn-primary ml20"><i class="icon_area area-fabu fz_14 mr5"></i>立即发布</a>
+        </div>
+      </div>
+    </form>
+    
+   </div>
+</div>
+<!--模块化js--> 
+<script src="../js/sea.js"></script> 
+<script src="../js/seaconfig2.0.js"></script> 
+<script>
+     seajs.use(["jq","bs","rach","dw"],function(j,b,rach,dw){
+		 opt.navli_j[0].isactive=true;
+         rach.rach_run(function(t){},function(t){});
+	});
+    </script>
+<!--编辑器-->
+<script src="../js/jq/1.11.1/jquery.min2.1.0.js"></script>
+<script src="../js/plug-in/editor/editor.js"></script> 
+<script>
+		$(document).ready(function() {
+			$("#txtEditor").Editor();
+		});
+
+</script>
+
+
+</body>
+</html>

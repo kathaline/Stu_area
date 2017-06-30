@@ -79,6 +79,14 @@ a:hover,a:focus {color:#0288d1;}
 .h3_color{color:#999!important;}
 .error_color{color:#F0485F!important; }
 
+/*警告颜色覆盖*/
+.text-warning{ color:#eeaa34;}
+/*标签及徽章背景色优先级*/
+.label-primary.badge{background-color: #337ab7;}
+.label-success.badge{background-color: #5cb85c;}
+.label-info.badge{background-color: #5bc0de;}
+.label-warning.badge{background-color: #f0ad4e;}
+.label-danger.badge{background-color: #d9534f;}
 
 .ba_f5{ background:#f5f5f5!important;}
 .ba_f4{ background:#f4f4f4!important;}
@@ -293,6 +301,8 @@ ul.error_tips li{ padding:4px 0 ; margin:0;}
 .form-control {height:30px;padding:5px 10px;}
 .help-block{ font-size:12px; }
 .form-control[readonly]{cursor:default;}
+/*表单校验样式覆盖*/
+.form-control-feedback{ height:32px; line-height:32px; width: 36px;}
 
 /*下拉组改装*/
 .qkydropdown .btn{ width:100%; text-align:left; position:relative; height:30px; padding:4px 30px 4px 5px; vertical-align: inherit;}
@@ -596,8 +606,6 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .form_tips .arrow:after{position: absolute; display: block; width: 0; height: 0; border-color: transparent;  border-style: solid;content: ""; border-width: 10px;top: 1px;   margin-left: -10px;   content: " ";   border-top-width: 0; border-bottom-color: #fff;}
 .form-horizontal .panel{box-shadow:none;-webkit-box-shadow:none; border:none;}
 
-/*文本框内图标定位样式覆盖*/
-.form-control-feedback{ height:32px; line-height:32px;}
 /*编辑指标-展开收起*/
 .cadr_htd{ background:#f1f6f9;}
 .icon_area.area-shouqi[aria-expanded="false"]:before{content: "\e60e";}

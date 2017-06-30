@@ -33,6 +33,8 @@
 .wd50{width:50%;}
 .wd80{width:80%;}
 .wd100{ width:100%;}
+.text-indent{text-indent:2em;}
+.radius-4{ border-radius:4px;}
 
 .co_a3{ color:#a3a3a3!important;}
 .co_93{ color:#939393!important;}
@@ -125,3 +127,5 @@
 .pa20{ padding:20px!important;}
 /*左边蓝色边线*/
 .bor-lb{ border-left:3px solid #27b0f2;}
+/*超出省略号*/
+.w-over{white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}

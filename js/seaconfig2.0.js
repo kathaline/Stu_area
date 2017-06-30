@@ -50,7 +50,7 @@ seajs.config({
 
 var opt={
 	navli_j:[
-			{name:"评价信息",attrcont:"href='index.html'",isactive:false},
+			{name:"评价信息",attrcont:"href='index-sysm.html'",isactive:false},
 			{name:"数据监控",attrcont:"href='index-dm.html'",isactive:false},
 			{name:"数据分析",attrcont:"href='index-da.html'",isactive:false},
 			{name:"成长档案袋",attrcont:"href='index-grow.html'",isactive:false},
