@@ -578,7 +578,10 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .menu_l li a:focus{text-decoration:none;}
 .menu_l li a.cur{ border-left:4px solid #27b0f2; background:#2f3949;color:#fff; }
 .menu02{background:#323d4e;}
-.menu02 li a{ height:40px; line-height:40px;}
+.menu02 li a{ height:40px; line-height:40px; padding-left:25px;}
+@media (min-width:768px) and (max-width:992px){.menu_l li a{ padding:0 5px;}.menu02 li a{padding-left:10px;}}
+@media (min-width:992px) and (max-width:1200px){.menu_l li a{ padding:0 12px;}.menu02 li a{padding-left:20px;}}
+@media (min-width: 1200px) {.menu02 li a{padding-left:40px;}}
 
 /*tab切换样式覆盖*/
 .tab .nav-tabs{ position: relative;}
