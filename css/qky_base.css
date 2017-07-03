@@ -306,7 +306,7 @@ ul.error_tips li{ padding:4px 0 ; margin:0;}
 
 /*下拉组改装*/
 .qkydropdown .btn{ width:100%; text-align:left; position:relative; height:30px; padding:4px 30px 4px 5px; vertical-align: inherit;}
-.qkydropdown .btn .icon_area{ position:absolute; right:6px; top:8px; border:0; width:14px; height:14px; text-align:center; line-height:14px; color:#333;}
+.qkydropdown .btn .icon_area{ position:absolute; right:6px; top:7px; border:0; width:14px; height:14px; text-align:center; line-height:14px; color:#333;}
 .qkydropdown.open .btn .icon_area:before{content: "\e600";}
 .qkydropdown .dropdown-menu{ width:100%; max-height:440px; overflow-y:auto;}
 .maxh{ max-height:200px; overflow-y:auto;}
