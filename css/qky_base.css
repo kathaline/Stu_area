@@ -306,11 +306,11 @@ ul.error_tips li{ padding:4px 0 ; margin:0;}
 
 /*下拉组改装*/
 .qkydropdown .btn{ width:100%; text-align:left; position:relative; height:30px; padding:4px 30px 4px 5px; vertical-align: inherit;}
-.qkydropdown .btn .icon_area{ position:absolute; right:6px; top:7px; border:0; width:14px; height:14px; text-align:center; line-height:14px; color:#333;}
+.qkydropdown .btn .icon_area{ position:absolute; right:6px; top:8px; border:0; width:14px; height:14px; text-align:center; line-height:14px; color:#333;}
 .qkydropdown.open .btn .icon_area:before{content: "\e600";}
 .qkydropdown .dropdown-menu{ width:100%; max-height:440px; overflow-y:auto;}
 .maxh{ max-height:200px; overflow-y:auto;}
-.dropdown-menu > li > a{ padding-left:10px;}
+.dropdown-menu > li > a{ padding-left:10px; padding-right:10px;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
 
 /*单选改装*/
 .radio label{ line-height:30px; height:30px;}
@@ -576,7 +576,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .menu_l li a{ display:block; height:60px; line-height:60px;  padding:0 20px; color:#a0acbf;}
 .menu_l li a:hover{ text-decoration:none;background:#323d4e;color:#fff;}
 .menu_l li a:focus{text-decoration:none;}
-.menu_l li a.cur{ border-left:4px solid #27b0f2; background:#2f3949;color:#fff; }
+.menu_l.menu01 li.active a,.menu_l .menu02 li.active a{ border-left:4px solid #27b0f2; background:#2f3949;color:#fff; }
 .menu02{background:#323d4e;}
 .menu02 li a{ height:40px; line-height:40px; padding-left:25px;}
 @media (min-width:768px) and (max-width:992px){.menu_l li a{ padding:0 5px;}.menu02 li a{padding-left:10px;}}

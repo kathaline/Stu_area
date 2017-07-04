@@ -27,17 +27,17 @@
                 <div class="row">
                     <ul class="menu_l">
                        <li>
-                          <a data-toggle="collapse" data-parent="#accordion" href="#collapse01" aria-expanded="true" href="index-sysm.html"><i class="glyphicon glyphicon-tasks mr10"></i>评价体系监控<i class="icon_area area-shouqi fr fz_20"></i></a>
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapse01" aria-expanded="true" ><i class="glyphicon glyphicon-tasks mr10"></i>评价体系监控<i class="icon_area area-shouqi fr fz_20"></i></a>
                           <ul id="collapse01" class="menu02 panel-collapse collapse in">
-                             <li><a href="#" class="cur">体系使用情况</a></li>
+                             <li class="menu-c active"><a href="monit_html/m_sys-use.html" target="mainFrame">体系使用情况</a></li>
                           </ul>
                        </li>
                        <li>
-                          <a data-toggle="collapse" data-parent="#accordion" href="#collapse02" aria-expanded="false" href="index-sysm.html"><i class="glyphicon glyphicon-stats mr10"></i>德育评价监控<i class="icon_area area-shouqi fr fz_20"></i></a>
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapse02" aria-expanded="false" class="collapsed"><i class="glyphicon glyphicon-stats mr10"></i>德育评价监控<i class="icon_area area-shouqi fr fz_20"></i></a>
                           <ul id="collapse02" class="menu02 panel-collapse collapse">
-                             <li><a href="#">日常评价</a></li>
-                             <li><a href="#">学期评价</a></li>
-                             <li><a href="#">学期评语</a></li>
+                             <li class="menu-c"><a href="sys_html/sys_Release.html" target="mainFrame">日常评价</a></li>
+                             <li class="menu-c"><a href="#">学期评价</a></li>
+                             <li class="menu-c"><a href="#">学期评语</a></li>
                           </ul>
                        </li>
                     </ul>
@@ -45,8 +45,7 @@
             </div>
             <div class="container_right col-sm-10 col-sm-offset-2">
                <div class="embed-responsive embed-responsive-4by3 row">
-                 <div style="100%; overflow:hidden;">
-                  <iframe class="embed-responsive-item" src="monit_html/m_sys-use.html"></iframe>
+                  <iframe class="embed-responsive-item" name="mainFrame" id="mainFrame" src="monit_html/m_sys-use.html"></iframe>
                </div>
             </div>
         </div> 
@@ -59,7 +58,10 @@
      seajs.use(["jq","bs","nav"],function(j,b,n){
 		 opt.navli_j[0].isactive=true;
 		 $("#qkynav").qkynav(opt);	 
-
+	     $(".menu_l .menu-c").on("click",function(){
+	    	$(".menu_l .menu-c").removeClass("active"); 
+            $(this).addClass("active"); 
+		 });
 	});
     </script>
 </body>
