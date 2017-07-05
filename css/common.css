@@ -128,9 +128,9 @@
 .pa20{ padding:20px!important;}
 /*边线*/
 .bor-lb{ border-left:3px solid #27b0f2;}
-.bor-t{ border-top:1px solid #eee}
-.bor-r{ border-right:1px solid #eee}
-.bor-b{ border-bottom:1px solid #eee}
-.bor-l{ border-left:1px solid #eee}
+.bor-t{ border-top:1px solid #e7e7e7;}
+.bor-r{ border-right:1px solid #e7e7e7;}
+.bor-b{ border-bottom:1px solid #e7e7e7;}
+.bor-l{ border-left:1px solid #e7e7e7;}
 /*超出省略号*/
 .w-over{white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}

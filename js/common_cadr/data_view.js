@@ -6,7 +6,7 @@ define(function(require) {
 var datas={
 	bg_data:{
 		tit:"使用比例",
-		data:{"未使用":[4,"#f0ad4e"],"已使用":[18,"#31b0d5"]}
+		data:{"未使用":[4,"#f0ad4e"],"已使用":[14,"#31b0d5"]}
 	},
 	vg_data:{
 		tit:"农村人口比例",
