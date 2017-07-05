@@ -126,7 +126,11 @@
 .pa10{ padding:10px!important;}
 .pa15{ padding:15px!important;}
 .pa20{ padding:20px!important;}
-/*左边蓝色边线*/
+/*边线*/
 .bor-lb{ border-left:3px solid #27b0f2;}
+.bor-t{ border-top:1px solid #eee}
+.bor-r{ border-right:1px solid #eee}
+.bor-b{ border-bottom:1px solid #eee}
+.bor-l{ border-left:1px solid #eee}
 /*超出省略号*/
 .w-over{white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}

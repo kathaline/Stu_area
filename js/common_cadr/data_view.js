@@ -5,8 +5,8 @@
 define(function(require) {
 var datas={
 	bg_data:{
-		tit:"男女比例",
-		data:{"女":[45,"#ff7171"],"男":[55,"#ffae72"]}
+		tit:"使用比例",
+		data:{"未使用":[4,"#f0ad4e"],"已使用":[18,"#31b0d5"]}
 	},
 	vg_data:{
 		tit:"农村人口比例",
@@ -30,7 +30,7 @@ var datas={
 	}
 };
 
-xrzb('boy_girl',datas.bg_data.data,datas.bg_data.tit);
+xrzb('school-use',datas.bg_data.data,datas.bg_data.tit);
 xrzb('isvillage',datas.vg_data.data,datas.vg_data.tit);
 xrzb('ishealthy',datas.ht_data.data,datas.ht_data.tit);
 xrzb('studerfrom',datas.sf_data.data,datas.sf_data.tit);

@@ -26,6 +26,9 @@ seajs.config({
 	'datep':'plug-in/DatePicker/WdatePicker',//
 	'fvalid':'plug-in/formvalid/formValidation',//
 	'valid':'plug-in/formvalid/validator',//
+
+
+	'data_v':'common_cadr/data_view',
   },
 
   // 路径配置

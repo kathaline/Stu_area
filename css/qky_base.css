@@ -1,12 +1,7 @@
 /*
- * 综合素质评价区域版基础样式
- */
-
-
-/*
+ * 综合素质评价区域版基础样式/*
  * 对bootstrap基础样式覆盖并改装
  */
- 
 /**********1.整体框架基础**********/
 body{font-family: Microsoft YaHei,"Hiragino Sans GB W3", Helvetica, Arial, sans-serif;}
 .qkybody{ padding:50px 0; background:#eaeaea; position:absolute; top:0; left:0; min-height:100%; width:100%;}
@@ -381,7 +376,7 @@ a.checkbox_a{display:block; width:14px; height:14px; border:1px solid #dadada; b
 .table > tfoot > tr.active > th {
     background-color: #f9f9f9;
 }
-.table >tbody>tr>td .qkyicon_14,.table >tbody>tr>td .icon_area{ color:#27b0f2; text-decoration:none;}
+.table >tbody>tr>td .qkyicon_14,.table >tbody>tr>td a.icon_area{ color:#27b0f2; text-decoration:none;}
 .table>tbody>tr>td .qkyicon_14:hover,.table >tbody>tr>td .icon_area:hover{ color:#0288d1;}
 
 
@@ -574,7 +569,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .menu_l > li{border-bottom:4px solid #2b3544; border-top:1px solid #414b5c;}
 .menu_l li:first-child{border-top:0;}
 .menu_l li a{ display:block; height:60px; line-height:60px;  padding:0 20px; color:#a0acbf;}
-.menu_l li a:hover{ text-decoration:none;background:#323d4e;color:#fff;}
+.menu_l li a:hover{ text-decoration:none;color:#fff;}
 .menu_l li a:focus{text-decoration:none;}
 .menu_l.menu01 li.active a,.menu_l .menu02 li.active a{ border-left:4px solid #27b0f2; background:#2f3949;color:#fff; }
 .menu02{background:#323d4e;}
