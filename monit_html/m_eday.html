@@ -141,81 +141,83 @@
         <table class="table table-bordered table-striped">
          <thead>
           <tr>
-            <th width="19%" scope="col">学校名称</th>
-            <th width="30%" scope="col">体系名称</th>
-            <th width="11%" scope="col">评价类型</th>
-            <th width="8%" scope="col">评分方式</th>
-            <th width="32%" scope="col">设置适用年级</th>
+            <th width="23%" scope="col">学校名称</th>
+            <th width="15%" scope="col">评价次数</th>
+            <th width="14%" scope="col">参与评价老师（数）</th>
+            <th width="14%" scope="col">被评价学生（数）</th>
+            <th width="34%" scope="col">评价涉及年级</th>
           </tr>
          </thead>
          <tbody>
-          <tr>
-            <td rowspan="3" valign="middle">中山市第一中学</td>
-            <td>2017-2018学年度第一学期日常评价</td>
-            <td>学期评价</td>
-            <td>等第制</td>
-            <td>一年级、二年级、三年级、四年级、五年级、六年级</td>
-          </tr>
-          <tr>
-            <td>2016-2017学年第二学期小学日常评价</td>
-            <td>日常评价</td>
-            <td>百分制</td>
-            <td>初一、初二、初三</td>
+           <tr>
+             <td>中山市孙逸仙中学</td>
+             <td>125</td>
+             <td>25</td>
+             <td>10</td>
+             <td>初一、初二、初三</td>
            </tr>
-          <tr>
-            <td>初中生综合素质学期评价</td>
-            <td>学期评价</td>
-            <td>等第制</td>
-            <td>一年级、二年级、三年级、四年级、五年级、六年级</td>
+           <tr>
+             <td>中山市东区小学</td>
+             <td>215</td>
+             <td>21</td>
+             <td>6</td>
+             <td>一年级、二年级、三年级、四年级、五年级、六年级</td>
+           </tr>
+           <tr>
+             <td>中山市第三中学</td>
+             <td>125</td>
+             <td>25</td>
+             <td>10</td>
+             <td>初一、初二、初三</td>
            </tr>
           <tr>
             <td>中山市孙逸仙中学</td>
-            <td>2016-2017学年第二学期小学日常评价</td>
-            <td>日常评价</td>
-            <td>百分制</td>
+            <td>215</td>
+            <td>21</td>
+            <td>6</td>
             <td>初一、初二、初三</td>
            </tr>
           <tr>
             <td>中山市东区小学</td>
-            <td>初中生综合素质学期评价</td>
-            <td>学期评价</td>
-            <td>等第制</td>
+            <td>125</td>
+            <td>25</td>
+            <td>10</td>
             <td>一年级、二年级、三年级、四年级、五年级、六年级</td>
            </tr>
           <tr>
             <td>中山市第三中学</td>
-            <td>2016-2017学年第二学期小学日常评价</td>
-            <td>日常评价</td>
-            <td>百分制</td>
+            <td>215</td>
+            <td>21</td>
+            <td>6</td>
             <td>初一、初二、初三</td>
            </tr>
           <tr>
             <td>中山市孙逸仙中学</td>
-            <td>初中生综合素质学期评价</td>
-            <td>学期评价</td>
-            <td>等第制</td>
+            <td>125</td>
+            <td>25</td>
+            <td>10</td>
             <td>一年级、二年级、三年级、四年级、五年级、六年级</td>
            </tr>
           <tr>
             <td>中山市东区小学</td>
-            <td>2016-2017学年第二学期小学日常评价</td>
-            <td>日常评价</td>
-            <td>百分制</td>
+            <td>215</td>
+            <td>21</td>
+            <td>6</td>
             <td>初一、初二、初三</td>
            </tr>
           <tr>
             <td>中山市第三中学</td>
-            <td>初中生综合素质学期评价</td>
-            <td>学期评价</td>
-            <td>等第制</td>
+            <td>125</td>
+            <td>25</td>
+            <td>10</td>
             <td>一年级、二年级、三年级、四年级、五年级、六年级</td>
            </tr>
           <tr>
             <td>中山市第六中学</td>
-            <td><span class="error_color"><i class="icon_area area-gantanhao fz_14 mr5"></i>未使用</span></td>
-            <td>--</td>
-            <td>--</td>
-            <td>--</td>
+            <td>215</td>
+            <td>21</td>
+            <td>6</td>
+            <td>一年级</td>
            </tr>
           </tbody>
         </table>
@@ -240,10 +242,11 @@
 <!--模块化js--> 
 <script src="../js/sea.js"></script> 
 <script src="../js/seaconfig2.0.js"></script> 
+<script src="../js/plug-in/echarts/3.0/echarts.min.js"></script> 
+<script src="../js/common_cadr/data_view.js"></script> 
 <script>
- seajs.use(["jq","bs","gzgl/mygzt","rach","dw","ec","data_v"],function(j,b,mygzt,rach,dw,ec,data_v){
+ seajs.use(["jq","bs","gzgl/mygzt","dw"],function(j,b,mygzt,dw){
 	 mygzt.mygzt_run();
-	 rach.rach_run(function(t){},function(t){});
 	 $(".school_one").on("click",function(){
 		$(".school_one").removeClass("active"); 
 		$(this).addClass("active"); 
