@@ -66,7 +66,7 @@ var dom = document.getElementById("school-eva");
       trigger: 'axis'
   },
   legend: {
-      x:'70%',
+      x:'85%',
       data:['评价次数']
   },
   toolbox: {
