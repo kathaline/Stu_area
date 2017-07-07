@@ -20,7 +20,7 @@ seajs.config({
 
 	/****插件***/
 	'ci':'plug-in/cropit-master/jquery.cropit',
-	'ec':'plug-in/echarts/3.0/echarts.common.min',//数据视图插件ec
+	'ec':'plug-in/echarts/3.0/echarts.min',//数据视图插件ec
 	'sw':'plug-in/swiper/3.4.1/js/swiper.min',//3.4轮播插件
 	'sw2':'plug-in/swiper/2.0/idangerous.swiper.min',//2.0轮播插件	
 	'datep':'plug-in/DatePicker/WdatePicker',//
