@@ -8,34 +8,9 @@ var datas={
 		tit:"使用比例",
 		data:{"未使用":[4,"#f0ad4e"],"已使用":[14,"#31b0d5"]}
 	},
-	vg_data:{
-		tit:"农村人口比例",
-		data:{"农村户口":[45,"#ff7171"],"非农村户口":[55,"#ffae72"]}
-	},
-	ht_data:{
-		tit:"健康比例",
-		data:{"健康或良好":[88,"#ff7171"],"残迹":[1,"#eebe77"],"一般或较弱":[15,"#7cb1ef"],"有慢性病":[8,"#d5eb7e"],"有生理缺陷":[1,"#68c9bf"]}
-	},
-	sf_data:{
-		tit:"学生来源比例",
-		data:{"正常入学":[45,"#ff7171"],"借读":[55,"#ffae72"],"其他":[55,"#eebe77"]}
-	},
-	ss_data:{
-		tit:"入学比例",
-		data:{"就近入学":[45,"#ff7070"],"义务教育阶段其他":[55,"#ffaf72"],"统一招生":[55,"#7cb1ef"],"体育特招":[55,"#ffd772"],"艺术特招":[55,"#68c9bf"],"高中阶段其他":[55,"#d5eb7e"]}
-	},
-	as_data:{
-		tit:"就读方式",
-		data:{"走读":[45,"#ff7171"],"住校":[55,"#ffae72"]}
-	}
 };
 
 xrzb('school-use',datas.bg_data.data,datas.bg_data.tit);
-xrzb('isvillage',datas.vg_data.data,datas.vg_data.tit);
-xrzb('ishealthy',datas.ht_data.data,datas.ht_data.tit);
-xrzb('studerfrom',datas.sf_data.data,datas.sf_data.tit);
-xrzb('startschool',datas.ss_data.data,datas.ss_data.tit);
-xrzb('attendschool',datas.as_data.data,datas.as_data.tit);
 
 function xrzb(id,datas,tit){
 	var labels = new Array();
@@ -78,4 +53,63 @@ function xrzb(id,datas,tit){
 
 });
 	
-	
+var myChart = echarts.init(document.getElementById('eday-eva'));
+var  option = {
+	   title: {
+        text: '堆叠区域图'
+    },
+    tooltip : {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            label: {
+                backgroundColor: '#6a7985'
+            }
+        }
+    },
+    legend: {
+        data:['搜索引擎']
+    },
+    toolbox: {
+        feature: {
+            saveAsImage: {}
+        }
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    xAxis : [
+        {
+            type : 'category',
+            boundaryGap : false,
+            data : ['周一','周二','周三','周四','周五','周六','周日']
+        }
+    ],
+    yAxis : [
+        {
+            type : 'value'
+        }
+    ],
+    series : [
+        
+        {
+            name:'搜索引擎',
+            type:'line',
+            stack: '总量',
+            label: {
+                normal: {
+                    show: true,
+                    position: 'top'
+                }
+            },
+            areaStyle: {normal: {}},
+            data:[820, 932, 901, 934, 1290, 1330, 1320]
+        }
+    ]
+};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);

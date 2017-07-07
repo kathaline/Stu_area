@@ -300,6 +300,7 @@ ul.error_tips li{ padding:4px 0 ; margin:0;}
 .form-control-feedback{ height:32px; line-height:32px; width: 36px;}
 
 /*下拉组改装*/
+.qkydropdown{ height:30px;}
 .qkydropdown .btn{ width:100%; text-align:left; position:relative; height:30px; padding:4px 30px 4px 5px; vertical-align: inherit;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
 .qkydropdown .btn .icon_area{ position:absolute; right:6px; top:8px; border:0; width:14px; height:14px; text-align:center; line-height:14px; color:#333;}
 .qkydropdown.open .btn .icon_area:before{content: "\e600";}
@@ -538,28 +539,19 @@ a.checkbox_a{display:block; width:14px; height:14px; border:1px solid #dadada; b
 .container_left {position: fixed;top: 50px;bottom: 50px;left: 0;z-index: 1000;display: block;overflow-x: hidden;overflow-y: auto; background-color: #354052; height:100%;}
 }
 
-/*gzglbase*/
-.search_box{ width:100%; background:#f5f5f5; padding:25px 0; display:none;}
-.gzmould_box{ max-height:90px; overflow:hidden;}
-.gzmould_box.auto{ max-height:none;}
-.gzmould{ float:left; display:block;}
-.gzmould_more:after{ content:"展开更多"}
-.gzmould_more.zd:after{ content:"折叠成两行"}
+/*school_box base*/
+.school_box{ max-height:90px; overflow:hidden;}
+.school_box.auto{ max-height:none;}
+.school_one{ float:left; display:block; background:#f6f6f6; color:#333;}
+.school_one.active{ color: #fff !important;background-color: #0288d1;border-color: #0288d1;box-shadow:none;}
+.school_more:after{ content:"展开更多"}
+.school_more.zd:after{ content:"收起更多"}
 .gzdist_mould.table >thead >tr >th{ padding:0; text-align:center; height:50px; line-height:50px; border:1px solid #d8d8d8; border-right:0;}
 .gzdist_mould.table >thead >tr >th.one{ border-left:none;}
 .gzdist_mould.table >thead >tr >th.bh{ height:25px; line-height:25px; }
 .gzdist_mould.table>tbody >tr >td{ text-align:center;}
 ul,li{ padding:0; margin:0; list-style:none;}
-.infinite_box{ width:100%; display: none;}
-.infinite_box.intop{ display:block;}
-.infinite_box li{ width:100%; box-sizing:border-box; padding-left:10px;}
-.infinite_box li.block{ display: block;}
-.infinite_box li.none{ display: none;}
-.infinite_lia{ padding:10px 0;   display:block; color:#737373; border-bottom:1px  solid #eee; cursor:pointer; }
-.infinite_lia .wf-icon{ padding-right:5px; cursor:pointer;}
-.lowest .infinite_lia{border-bottom:1px dashed #d8d8d8;}
-.infinite_lia span{ color:#333;}
-.infinite_lia .chooseicon{ margin-right:5px;}
+
 .table-responsive._sm{  width: 100%;  overflow-y: hidden; -ms-overflow-style: -ms-autohiding-scrollbar;}
 .table-responsive._sm .table>tbody>tr>td{ min-width:90px;}
 .table-responsive._sm .table>tbody>tr>td.big_mw{ min-width:180px;}
@@ -616,5 +608,5 @@ ul,li{ padding:0; margin:0; list-style:none;}
 
 
 /*滚动条样式*/
-::-webkit-scrollbar{width:0px}
+/*::-webkit-scrollbar{width:0px}*/
 
