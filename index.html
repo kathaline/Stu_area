@@ -20,7 +20,7 @@
     <![endif]-->
 </head>
 <body class="qkybody">
-<div id="qkynav"></div>
+<div id="qkynav" class="navbar-collapse collapse"></div>
 <div class="container-fluid">
         <div class="row">
             <div class="container_left col-sm-2">
@@ -36,14 +36,14 @@
                           <a data-toggle="collapse" data-parent="#accordion" href="#collapse02" aria-expanded="false" class="collapsed"><i class="glyphicon glyphicon-stats mr10"></i>德育评价监控<i class="icon_area area-shouqi fr fz_20"></i></a>
                           <ul id="collapse02" class="menu02 panel-collapse collapse">
                              <li class="menu-c"><a href="monit_html/m_eday.html" target="mainFrame">日常评价</a></li>
-                             <li class="menu-c"><a href="#">学期评价</a></li>
-                             <li class="menu-c"><a href="#">学期评语</a></li>
+                             <li class="menu-c"><a href="monit_html/m_term.html" target="mainFrame">学期评价</a></li>
+                             <li class="menu-c"><a href="monit_html/m_termcom.html" target="mainFrame">学期评语</a></li>
                           </ul>
                        </li>
                     </ul>
                 </div>
             </div>
-            <div class="container_right col-sm-10 col-sm-offset-2">
+            <div class="container_right col-sm-10 col-sm-offset-2" >
                <div class="embed-responsive embed-responsive-4by3 row">
                   <iframe class="embed-responsive-item" name="mainFrame" id="mainFrame" src="monit_html/m_sys-use.html"></iframe>
                </div>
@@ -63,6 +63,8 @@
 		$(this).addClass("active"); 
 	 });
 });
+
+
 </script>
 </body>
 </html>

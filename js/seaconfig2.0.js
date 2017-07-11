@@ -27,7 +27,6 @@ seajs.config({
 	'fvalid':'plug-in/formvalid/formValidation',//
 	'valid':'plug-in/formvalid/validator',//
 
-
 	'data_v':'common_cadr/data_view',
   },
 

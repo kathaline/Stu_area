@@ -24,7 +24,7 @@
 <body class="areabody">
 <div class="container-fluid">            
  <div class="pt15 pb15">
-    <div class="co_73 fz_12"><i class="icon_area area-shouye fz_14 mr5"></i><span><a href="m_sys-use.html">评价跟踪</a></span><i class="icon_area area-zuo1 fz_14 ml10 mr10"></i><span><a href="m_eday.html">德育评价跟踪</a></span><i class="icon_area area-zuo1 fz_14 ml10 mr10"></i><span>日常评价</span></div>
+    <div class="co_73 fz_12"><i class="icon_area area-shouye fz_14 mr5"></i><span><a href="m_sys-use.html">评价跟踪</a></span><i class="icon_area area-zuo1 fz_14 ml10 mr10"></i><span><a href="m_eday.html">德育评价跟踪</a></span><i class="icon_area area-zuo1 fz_14 ml10 mr10"></i><span>学期评语</span></div>
  </div>
  <div class="qkycadr mb15 pt15 pl20">
       <div class="media ">
@@ -82,35 +82,20 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-sm-3 pl0">
-                <div class="dropdown qkydropdown havechoose">
-                  <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
-                    <span class="value">7月</span>
-                    <span class="icon_area area-zhankai"></span>
-                  </a>
-                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                    <li role="presentation"><a title="7月">7月</a></li>
-                    <li role="presentation"><a title="6月">6月</a></li>
-                    <li role="presentation"><a title="5月">5月</a></li>
-                    <li role="presentation"><a title="4月">4月</a></li>
-                  </ul>
-                </div>
-          </div>
             </form>
             <div class="col-sm-4 pl0 text-right">
-             <div class="mr20 co_93 pt5"><i class="icon_area area-gantanhao fz_14 mr5"></i>记录学校日常评价的评价情况</div>
+             <div class="mr20 co_93 pt5"><i class="icon_area area-gantanhao fz_14 mr5"></i>记录学校学期评语的完成情况</div>
             </div>
           </div>
        </div>
        <div class="clear pt15 pb15">
-          <div class="col-sm-10">
-            <h5 class="bor-lb fz_16 ma10 pl10">日常评价趋势图</h5>
-            <div class="data_view_limain" id="schooleva"></div>
+          <h5 class="bor-lb fz_16 mt10 ml20 mb15 pl10">学期评语情况</h5>
+          <div class="col-sm-4 pl20">
+            <div class="data_view_limain" id="doneeva"></div>
+            <p class="mt15 co_93"><i class="icon_area area-tishi fz_14 mr5"></i>完成率=已完成学生数/需完成学生数*100%</p>
           </div>
-          <div class="col-sm-2 pt20 mt20 pr20">
-            <p class="bg-primary btn-info fz_16 radius-4 pa15">月度统计次数<strong class="fz_20 ml5 mr5">1029</strong>次</p>
-            <p class="bg-info fz_16 radius-4 pa15">加分次数<strong class="text-warning fz_20 ml5 mr5">829</strong>次</p>
-            <p class="bg-info fz_16 radius-4 pa15">减分次数<strong class="text-warning fz_20 ml5 mr5">200</strong>次</p>
+          <div class="col-sm-8">
+            <div class="data_view_limain" id="gradeeva"></div>
           </div>
        </div>
     </div>
@@ -133,91 +118,152 @@
                   </ul>
                 </div>
               </div>
+              <div class="col-sm-3 ml5">
+                <div class="dropdown qkydropdown havechoose">
+                  <a class="btn btn-default dropdown-toggle auto" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
+                  <span class="value" title="全部年级">全部年级</span>
+                    <span class="icon_area area-zhankai"></span>
+                  </a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    <li role="presentation"><a title="全部年级">全部年级</a></li>
+                    <li role="presentation"><a title="一年级">一年级</a></li>
+                    <li role="presentation"><a title="二年级">二年级</a></li>
+                    <li role="presentation"><a title="三年级">三年级</a></li>
+                  </ul>
+                </div>
+              </div>
               
           </form>
+            <div class="col-sm-4 pl0 text-right">
+             <div class="mr20 co_93 pt5"><i class="icon_area area-gantanhao fz_14 mr5"></i>完成率低于50%会<strong class=" error_color">红色</strong>标识</div>
+            </div>
         </div>
      </div>
      <div class="table-responsive _sm">
         <table class="table table-bordered table-condensed table-striped">
          <thead>
           <tr>
-            <th width="23%" scope="col">学校名称</th>
-            <th width="14%" scope="col"><a href="#">评价次数<i class="glyphicon glyphicon-sort ml5"></i><i class="glyphicon glyphicon-sort-by-attributes ml5"></i><i class="glyphicon glyphicon-sort-by-attributes-alt ml5"></i></a></th>
-            <th width="15%" scope="col">参与评价老师（数）</th>
-            <th width="14%" scope="col">被评价学生（数）</th>
-            <th width="34%" scope="col">评价涉及年级</th>
-          </tr>
+            <th width="18%" scope="col">学校名称</th>
+            <th width="10%" scope="col">年级</th>
+            <th width="12%" scope="col">需评价学生数</th>
+            <th width="9%" scope="col">教师评价</th>
+            <th width="11%" scope="col"><a href="#">教师完成率<i class="glyphicon glyphicon-sort-by-attributes-alt ml5"></i></a></th>
+            <th width="9%" scope="col">学生自评</th>
+            <th width="11%" scope="col"><a href="#">学生完成率<i class="glyphicon glyphicon-sort-by-attributes ml5"></i></a></th>
+            <th width="9%" scope="col">家长评价</th>
+            <th width="11%" scope="col"><a href="#">家长完成率<i class="glyphicon glyphicon-sort ml5"></i></a></th>
+           </tr>
          </thead>
          <tbody>
            <tr>
              <td>中山市孙逸仙中学</td>
-             <td>125</td>
-             <td>25</td>
+             <td>一年级</td>
+             <td>100</td>
+             <td>95</td>
+             <td>95%</td>
              <td>10</td>
-             <td>初一、初二、初三</td>
+             <td><strong class="error_color">10%</strong></td>
+             <td>80</td>
+             <td>80%</td>
            </tr>
            <tr>
              <td>中山市东区小学</td>
-             <td>215</td>
-             <td>21</td>
-             <td>6</td>
-             <td>一年级、二年级、三年级、四年级、五年级、六年级</td>
+             <td>五年级</td>
+             <td>100</td>
+             <td>95</td>
+             <td>95%</td>
+             <td>10</td>
+             <td><strong class="error_color">10%</strong></td>
+             <td>80</td>
+             <td>80%</td>
            </tr>
            <tr>
              <td>中山市第三中学</td>
-             <td>125</td>
-             <td>25</td>
-             <td>10</td>
-             <td>初一、初二、初三</td>
+             <td>一年级</td>
+             <td>100</td>
+             <td>95</td>
+             <td>95%</td>
+             <td>85</td>
+             <td>85%</td>
+             <td>80</td>
+             <td>80%</td>
            </tr>
           <tr>
             <td>中山市孙逸仙中学</td>
-            <td>215</td>
-            <td>21</td>
-            <td>6</td>
-            <td>初一、初二、初三</td>
+            <td>一年级</td>
+            <td>100</td>
+            <td>95</td>
+            <td>95%</td>
+            <td>85</td>
+            <td>85%</td>
+            <td>80</td>
+            <td>80%</td>
            </tr>
           <tr>
             <td>中山市东区小学</td>
-            <td>125</td>
-            <td>25</td>
-            <td>10</td>
-            <td>一年级、二年级、三年级、四年级、五年级、六年级</td>
+            <td>一年级</td>
+            <td>100</td>
+            <td>95</td>
+            <td>95%</td>
+            <td>85</td>
+            <td>85%</td>
+            <td>80</td>
+            <td>80%</td>
            </tr>
           <tr>
             <td>中山市第三中学</td>
-            <td>215</td>
-            <td>21</td>
-            <td>6</td>
-            <td>初一、初二、初三</td>
+            <td>一年级</td>
+            <td>100</td>
+            <td>95</td>
+            <td>95%</td>
+            <td>85</td>
+            <td>85%</td>
+            <td>80</td>
+            <td>80%</td>
            </tr>
           <tr>
             <td>中山市孙逸仙中学</td>
-            <td>125</td>
-            <td>25</td>
-            <td>10</td>
-            <td>一年级、二年级、三年级、四年级、五年级、六年级</td>
+            <td>五年级</td>
+            <td>100</td>
+            <td>95</td>
+            <td>95%</td>
+            <td>85</td>
+            <td>85%</td>
+            <td>80</td>
+            <td>80%</td>
            </tr>
           <tr>
             <td>中山市东区小学</td>
-            <td>215</td>
-            <td>21</td>
-            <td>6</td>
-            <td>初一、初二、初三</td>
+            <td>一年级</td>
+            <td>100</td>
+            <td>95</td>
+            <td>95%</td>
+            <td>85</td>
+            <td>85%</td>
+            <td>80</td>
+            <td>80%</td>
            </tr>
           <tr>
             <td>中山市第三中学</td>
-            <td>125</td>
-            <td>25</td>
-            <td>10</td>
-            <td>一年级、二年级、三年级、四年级、五年级、六年级</td>
+            <td>一年级</td>
+            <td>100</td>
+            <td>56</td>
+            <td><strong class="error_color">56%</strong></td>
+            <td>85</td>
+            <td>85%</td>
+            <td>90</td>
+            <td>90%</td>
            </tr>
           <tr>
             <td>中山市第六中学</td>
-            <td>215</td>
-            <td>21</td>
-            <td>6</td>
             <td>一年级</td>
+            <td>100</td>
+            <td>45</td>
+            <td><strong class="error_color">45%</strong></td>
+            <td>85</td>
+            <td>85%</td>
+            <td>60</td>
+            <td>60%</td>
            </tr>
           </tbody>
         </table>
@@ -252,62 +298,134 @@
 	 });
 });
 
-var schoolChart = echarts.init(document.getElementById('schooleva'));
+var doneChart = echarts.init(document.getElementById('doneeva'));
 
         // 指定图表的配置项和数据
-  var   option = {
+  var  option = {
   title: {
-      text: ''
+      text: '教师评语完成情况',
+	  textStyle: { color:'#666', fontSize: 15}
   },
-  tooltip : {
-      trigger: 'axis'
-  },
-  legend: {
-      x:'85%',
-      data:['评价次数']
-  },
-  toolbox: {
-      feature: {
-          saveAsImage: {}
-      }
-  },
-  grid: {
-      left: '2%',
-      right: '4%',
-      bottom: '3%',
-      containLabel: true
-  },
-  xAxis : [
-      {
-          type : 'category',
-          boundaryGap : false,
-          data : ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31']
-      }
-  ],
-  yAxis : [
-      {
-          type : 'value'
-      }
-  ],
-  series : [
-      {
-          name:'评价次数',
-          type:'line',
-          stack: '总量',
-		  itemStyle:{normal: {color:'#5bc0de'}},
-          label: {
-              normal: {
-                  show: true,
-                  position: 'top'
-              }
-          },
-          areaStyle: {normal: {}},
-          data:[1,0, 9, 14,6,0,7,8,5,6,11,12,10,4,15,8,7,5,3,2,8,14,11,5,4,1,3,1,8,15,7]
-      }
-  ]
-  };
+    tooltip: {
+        trigger: 'item',
+        formatter: "{a} <br/>{b}: {c} ({d}%)"
+    },
+    legend: {
+        x : 'center',
+        y : 'bottom',
+        data:['已完成学生数','未完成学生数','未被分配评价\n体系学生数',]
+    },
+    series: [
+        {
+            name:'教师评语完成情况',
+            type:'pie',
+            radius: ['30%', '68%'],
+			startAngle:-20,
+			label:{normal:{formatter:"{b}\n{d}%",textStyle:{fontSize:12},show:true}},
+			labelLine:{normal:{smooth:false,length:8,length2:4,show:true}},
+            data:[
+                {value:234, name:'未完成学生数',itemStyle:{normal: {color:'#f0ad4e'}},},
+                {value:1205, name:'已完成学生数',itemStyle:{normal: {color:'#31b0d5'}},},
+            ]
+        },
+        
+    ]
+	};
         // 使用刚指定的配置项和数据显示图表。
-        schoolChart.setOption(option);
+        doneChart.setOption(option);
+
+var gradeChart = echarts.init(document.getElementById('gradeeva'));
+
+var option = {
+    title: {
+        text: '分年级完成情况',
+        textStyle: {
+            color: '#666',
+            fontSize: 15
+        }
+    },
+    "tooltip": {
+        "trigger": "axis",
+        "axisPointer": {
+            "type": "shadow"
+        },
+    },
+    grid: {
+
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    "legend": {
+        "x": "right",
+        "data": ['需完成学生数', '已完成学生数']
+    },
+    "toolbox": {
+        "show": true,
+        "feature": {
+            "restore": {},
+            "saveAsImage": {}
+        }
+    },
+    "calculable": true,
+    "xAxis": [{
+        "type": "category",
+        "splitLine": {
+            "show": false
+        },
+        "axisTick": {
+            "show": false
+        },
+        "splitArea": {
+            "show": false
+        },
+        "axisLabel": {
+            "interval": 0,
+            "rotate": 25,
+            "show": true,
+            "splitNumber": 15,
+            "textStyle": {
+                "fontFamily": "微软雅黑",
+                "fontSize": 12
+            }
+        },
+        "data": ['一年级', '二年级', '三年级', '四年级', '五年级', '六年级', '初一', '初二', '初三', '高一', '高二', '高三'],
+    }],
+    "yAxis": [{}],
+
+    "series": [{
+            "name": "需完成学生数",
+            "type": "bar",
+            //"barWidth": "20%",
+            "itemStyle": {
+                "normal": {
+                    "color": "#ddd",
+                    "barBorderRadius": 0,
+                    "label": {}
+                }
+            },
+            "data": [ 500, 376, 727,200,400, 300,270,500,400,451,500,320,]
+        }, {
+            "name": "已完成学生数",
+            "type": "bar",
+            "stack": "",
+            //"barWidth": "10%",
+            "barGap": "-100%",
+            "itemStyle": {
+                "normal": {
+                    "barBorderRadius": 0,
+                    "color": "#46b8da",
+                    "label": {}
+                }
+            },
+            "data": [ 309,217,705,110,119, 133,244,285,372,284, 178,135,],
+        },
+
+    ]
+}
+        // 使用刚指定的配置项和数据显示图表。
+        gradeChart.setOption(option);
 
 </script>
 </body>

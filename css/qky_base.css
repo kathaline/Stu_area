@@ -4,7 +4,14 @@
  */
 /**********1.整体框架基础**********/
 body{font-family: Microsoft YaHei,"Hiragino Sans GB W3", Helvetica, Arial, sans-serif;}
-.qkybody{ padding:50px 0; background:#eaeaea; position:absolute; top:0; left:0; min-height:100%; width:100%;}
+.qkybody{ padding:50px 0; background:#eaeaea; position:absolute; top:0; left:0; min-height:100%; width:100%;   -ms-overflow-style:none; overflow:-moz-scrollbars-none;}
+/*滚动条样式*/
+.qkybody::-webkit-scrollbar{display: none ;width:0;}
+@-moz-document url-prefix() { 
+.embed-responsive.embed-responsive-4by3 {
+    padding-bottom: 65%;
+}
+}
 .qkybody.app{ padding:94px 0 50px;}
 .qkyff_fluid{ background:#fff; width:100%;}
 .navbar-fixed-top {border: 0;}
@@ -357,11 +364,12 @@ a.checkbox_a{display:block; width:14px; height:14px; border:1px solid #dadada; b
 .table-hover> tbody > tr:hover >td {background-color:#f9f9f9;}
 .table-condensed > thead > tr > th, 
 .table-condensed > tbody > tr > th, 
-.table-condensed > tfoot > tr > th, 
+.table-condensed > tfoot > tr > th{ 
+padding:10px;} 
 .table-condensed > thead > tr > td, 
 .table-condensed > tbody > tr > td, 
 .table-condensed > tfoot > tr > td {
-    padding: 10px;
+    padding:15px 10px;
 }
 .table > thead > tr > td.active,
 .table > tbody > tr > td.active,
@@ -538,6 +546,7 @@ a.checkbox_a{display:block; width:14px; height:14px; border:1px solid #dadada; b
 @media (min-width: 768px) {
 .container_left {position: fixed;top: 50px;bottom: 50px;left: 0;z-index: 1000;display: block;overflow-x: hidden;overflow-y: auto; background-color: #354052; height:100%;}
 }
+.container-fluid,.container_right{ overflow-y:auto;}
 
 /*school_box base*/
 .school_box{ max-height:90px; overflow:hidden;}
@@ -606,7 +615,4 @@ ul,li{ padding:0; margin:0; list-style:none;}
 }
 .heig-in{ max-height:160px; overflow-y:auto;}
 
-
-/*滚动条样式*/
-::-webkit-scrollbar{width:0px}
 
