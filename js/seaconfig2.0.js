@@ -59,7 +59,7 @@ var opt={
 	]
 }
 
-for(var i=0;i<opt.navli_j.length;i++){
+for(var i=1;i<opt.navli_j.length;i++){
 	opt.navli_j[i].isactive=false;
 }
 
