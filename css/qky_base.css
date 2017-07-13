@@ -4,14 +4,7 @@
  */
 /**********1.整体框架基础**********/
 body{font-family: Microsoft YaHei,"Hiragino Sans GB W3", Helvetica, Arial, sans-serif;}
-.qkybody{ padding:50px 0; background:#eaeaea; position:absolute; top:0; left:0; min-height:100%; width:100%;   -ms-overflow-style:none; overflow:-moz-scrollbars-none;}
-/*滚动条样式*/
-.qkybody::-webkit-scrollbar{display: none ;width:0;}
-@-moz-document url-prefix() { 
-.embed-responsive.embed-responsive-4by3 {
-    padding-bottom: 65%;
-}
-}
+.qkybody{ padding-top:50px; background:#eaeaea; position:absolute; top:0; left:0; min-height:100%; width:100%; }
 .qkybody.app{ padding:94px 0 50px;}
 .qkyff_fluid{ background:#fff; width:100%;}
 .navbar-fixed-top {border: 0;}
@@ -544,9 +537,10 @@ padding:10px;}
 /*全屏模块分左右*/
 .container_left {display:none;}
 @media (min-width: 768px) {
-.container_left {position: fixed;top: 50px;bottom: 50px;left: 0;z-index: 1000;display: block;overflow-x: hidden;overflow-y: auto; background-color: #354052; height:100%;}
+.container_left {position: fixed;top: 50px;bottom: 50px;left: 0;z-index: 1000;display: block;overflow-x: hidden;overflow-y: auto; background-color: #354052; height:100%; width:246px;}
 }
 .container-fluid,.container_right{ overflow-y:auto;}
+.container_right{ float:right;}
 
 /*school_box base*/
 .school_box{ max-height:90px; overflow:hidden;}
@@ -615,4 +609,9 @@ ul,li{ padding:0; margin:0; list-style:none;}
 }
 .heig-in{ max-height:160px; overflow-y:auto;}
 
-
+/*欢迎页*/
+.div-wel{ color:#21a2db; position:absolute; width:100%;top:30%; z-index:9; margin-top:-100px;}
+@media (max-width: 1100px){
+	.div-wel{top:100px;}
+}
+.wel-bg{z-index:0; height:463px; position:absolute; bottom:50px; width:100%; background:url(../images/welcome_bg.png) bottom center no-repeat #eaeaea;}

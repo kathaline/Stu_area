@@ -1,62 +1,58 @@
-<!DOCTYPE html>
-<html lang="zh-cn">
+<!DOCTYPE HTML>
+<html style="overflow:hidden">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="author" content="">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="icon" href="qky2.ico">
 <title>学生综合素质评价</title>
 <link href="js/bootstrap/3.3.0/css/bootstrap.css" rel="stylesheet">
-
 <!--全课云基础样式覆盖-->
 <link rel="stylesheet" href="iconfont/stu_area/iconfont.css">
 <link href="css/qky_base.css" rel="stylesheet">
 <link href="css/common.css" rel="stylesheet">
-
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
+
 <body class="qkybody">
 <div id="qkynav"></div>
-<div class="container-fluid">
-        <div class="row">
-            <div class="container_left col-sm-2">
-                <div class="row">
-                    <ul class="menu_l menu01">
-                       <li class="menu-c active"><a href="sys_html/sys_index.html" target="mainFrame"><i class="glyphicon glyphicon-th-large mr10"></i>评价体系</a></li>
-                       <li class="menu-c"><a href="sys_html/sys_Release.html" target="mainFrame"><i class="glyphicon glyphicon-export mr10"></i>信息发布</a></li>
-                       <li class="menu-c"><a ><i class="glyphicon glyphicon-tags mr10"></i>学校反馈管理(暂缓)</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="container_right col-sm-10 col-sm-offset-2" style=" overflow:hidden;">
-               <div class="embed-responsive embed-responsive-4by3 row">
-                  <iframe class="embed-responsive-item" name="mainFrame" id="mainFrame" src="sys_html/sys_index.html"></iframe>
-                 
-               </div>
-            </div>
-        </div> 
-    </div>
-<div class="footer default">全通教育集团（广东）股份有限公司  版权所有  ©2007-2015</div>
+<div class="container_left pa0"> 
+    <ul class="menu_l menu01">
+       <li class="menu-c active"><a href="sys_html/sys_index.html" target="mainFrame"><i class="glyphicon glyphicon-th-large mr10"></i>评价体系</a></li>
+       <li class="menu-c"><a href="sys_html/sys_Release.html" target="mainFrame"><i class="glyphicon glyphicon-export mr10"></i>信息发布</a></li>
+       <li class="menu-c"><a ><i class="glyphicon glyphicon-tags mr10"></i>学校反馈管理(暂缓)</a></li>
+    </ul>
+</div>
+
+<div class="container_right">
+    <iframe frameborder="no" name="mainFrame" id="mainFrame" src="sys_html/sys_index.html"></iframe>
+</div>
 <!--模块化js--> 
 <script src="js/sea.js"></script> 
 <script src="js/seaconfig2.0.js"></script> 
 <script>
-     seajs.use(["jq","bs","nav"],function(j,b,n){
-		 opt.navli_j[0].isactive=true;
-		 $("#qkynav").qkynav(opt);	
-	     $(".menu_l .menu-c").on("click",function(){
-	    	$(".menu_l .menu-c").removeClass("active"); 
-            $(this).addClass("active"); 
-		 });
- 
+ seajs.use(["jq","bs","nav"],function(j,b,n){
+	 opt.navli_j[0].isactive=true;
+	 $("#qkynav").qkynav(opt);	 
+	 $(".menu_l .menu-c").on("click",function(){
+		$(".menu_l .menu-c").removeClass("active"); 
+		$(this).addClass("active"); 
+	 });
+});
+</script>
+<script language="JavaScript" charset="utf-8" src="js/jq/1.11.1/jquery.min2.1.0.js"></script>
+<script type="text/javascript">
+// 框架动态尺寸
+function resizeWin(){
+  $(".container_left").height($(window).height());
+  $(".container_right").height($(window).height()).width($(window).width()-246+'px');
+  $(".container_right iframe").height($(window).height()-50+'px').width($(".container_right").width());
+};
+$(window).load(function(){resizeWin();popZise()});
+$(window).resize(function(){resizeWin();popZise()});
+</script>
 
-	});
-    </script>
 </body>
 </html>
