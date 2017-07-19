@@ -540,7 +540,7 @@ padding:10px;}
 .container_left {position: fixed;top: 50px;bottom: 50px;left: 0;z-index: 1000;display: block;overflow-x: hidden;overflow-y: auto; background-color: #354052; height:100%; width:246px;}
 }
 .container-fluid,.container_right{ overflow-y:auto;}
-.container_right{ margin-left: 250px; float: left;}
+.container_right{ float:right;}
 
 /*school_box base*/
 .school_box{ max-height:90px; overflow:hidden;}
