@@ -12,8 +12,8 @@
 .po_r{ position:relative;}
 .po_ab{ position:absolute; top:0; left:0;}
 .po_ab_r{ position:absolute; top:0; right:0}
-.kuai{ display:block;}
-.kuai_line{ display:inline-block;}
+.block {display:block;}
+.iblock{ display:inline-block;}
 .box_b{ box-sizing:border-box;}/*块元素浮动算宽度时，忽略边框和内边距*/
 .dian3{ overflow:hidden;text-overflow:ellipsis; white-space:nowrap;}/*单行文字超出显示...*/
 .ycfile{position: absolute;width: 100%;height: 100%;left: 0;top: 0;filter: alpha(opacity=0);opacity: 0;z-index: 66;cursor: pointer;}/*完全透明的上传控件*/
