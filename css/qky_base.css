@@ -10,6 +10,7 @@ body{font-family: Microsoft YaHei,"Hiragino Sans GB W3", Helvetica, Arial, sans-
 .navbar-fixed-top {border: 0;}
 .areabody{background:#eaeaea;position:relative; left: 0; top: 0; width: 100%; height: 100%;}
 .qkycadr{ background:#fff; border:1px solid #d8d8d8;}
+#mainFrame{ position:absolute;top:50px; bottom:0; right:0;}
 
 /*整体宽度档位提供*/
 .container-md,.container-l,.container-xl,.container-p90,.container-p80,.container-p60{
@@ -652,7 +653,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .tree_list li:hover .mid{border:1px solid #ccc;box-shadow: 0px 0px 8px 0px #ccc;}
 .tree_list li.cur-term .mid{ border:1px solid #21a2db; box-shadow: 0px 0px 8px 0px #76d4fe;}
 .tree_list li.cur-term .arrow{ background-position:0 -16px;}
-.po_ab.g-anchor{top:0;}
+.po_ab.g-anchor{top:-20px;}
 
 .content-header{ width:100%; padding:20px 20px 0; height:60px; overflow:hidden;}
 .content-header .day{float: left; font-size: 36px;line-height: normal;font-weight: 700;font-family: arial; margin: -4px 0 0;width: 45px;}
