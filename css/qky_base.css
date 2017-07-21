@@ -652,7 +652,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .tree_list li:hover .mid{border:1px solid #ccc;box-shadow: 0px 0px 8px 0px #ccc;}
 .tree_list li.cur-term .mid{ border:1px solid #21a2db; box-shadow: 0px 0px 8px 0px #76d4fe;}
 .tree_list li.cur-term .arrow{ background-position:0 -16px;}
-.p-a.g-anchor{top:-80px;}
+.po_ab.g-anchor{top:0;}
 
 .content-header{ width:100%; padding:20px 20px 0; height:60px; overflow:hidden;}
 .content-header .day{float: left; font-size: 36px;line-height: normal;font-weight: 700;font-family: arial; margin: -4px 0 0;width: 45px;}
