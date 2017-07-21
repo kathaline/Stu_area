@@ -539,7 +539,7 @@ padding:10px;}
 @media (min-width: 768px) {
 .container_left {position: fixed;top: 50px;bottom: 50px;left: 0;z-index: 1000;display: block;overflow-x: hidden;overflow-y: auto; background-color: #354052; height:100%; width:246px;}
 }
-.container_right{ position: fixed; top: 50px; bottom: 50px; float: right;  right: 0;}
+.container_right{ position: fixed; top: 50px; right: 0;}
 
 /*school_box base*/
 .school_box{ max-height:90px; overflow:hidden;}
