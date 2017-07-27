@@ -543,6 +543,7 @@ padding:10px;}
 
 /*school_box base*/
 .school_box{ max-height:90px; overflow:hidden;}
+.school_box.school_nosel{max-height:70px; }
 .school_box.auto{ max-height:none;}
 .school_one{ float:left; color:#333;}
 .school_one.btn{ display:block; background:#f6f6f6;}
