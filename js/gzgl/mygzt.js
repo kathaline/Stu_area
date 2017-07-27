@@ -11,7 +11,7 @@ define(function(require,exports) {
 		var btnw=0;
 		var onestpe=true;
 		var onerowmorew=0;//第一行排列的时候多出来的宽度
-		$(".school_box .btn.school_one").each(function(i) {
+		$(".school_box .school_one").each(function(i) {
 			var thisw=Math.ceil($(this).outerWidth())+15;
             btnw+=thisw;
 			

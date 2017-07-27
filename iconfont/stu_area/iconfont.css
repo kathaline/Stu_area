@@ -1,10 +1,10 @@
 
 @font-face {font-family: "icon_area";
-  src: url('iconfont.eot?t=1500544322119'); /* IE9*/
-  src: url('iconfont.eot?t=1500544322119#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('iconfont.woff?t=1500544322119') format('woff'), /* chrome, firefox */
-  url('iconfont.ttf?t=1500544322119') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('iconfont.svg?t=1500544322119#icon_area') format('svg'); /* iOS 4.1- */
+  src: url('iconfont.eot?t=1500976276723'); /* IE9*/
+  src: url('iconfont.eot?t=1500976276723#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1500976276723') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1500976276723') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1500976276723#icon_area') format('svg'); /* iOS 4.1- */
 }
 
 .icon_area {
@@ -25,6 +25,8 @@
 
 .area-shijianxiangmu:before { content: "\e7fd"; }
 
+.area-jxz1:before { content: "\e61c"; }
+
 .area-fabu1:before { content: "\e768"; }
 
 .area-rongyubiaozhang:before { content: "\e7ef"; }
@@ -36,6 +38,8 @@
 .area-shouqi:before { content: "\e600"; }
 
 .area-gou:before { content: "\e61e"; }
+
+.area-dcl2:before { content: "\e632"; }
 
 .area-zhankai:before { content: "\e60e"; }
 
@@ -53,6 +57,8 @@
 
 .area-sousuo3:before { content: "\e671"; }
 
+.area-ywc:before { content: "\e612"; }
+
 .area-bianjiwenben:before { content: "\e667"; }
 
 .area-chexiao:before { content: "\e7f9"; }
@@ -60,6 +66,10 @@
 .area-xiazai2:before { content: "\e63c"; }
 
 .area-wenben:before { content: "\e608"; }
+
+.area-jxz:before { content: "\e614"; }
+
+.area-shibai:before { content: "\e685"; }
 
 .area-tishi:before { content: "\e626"; }
 
@@ -97,6 +107,8 @@
 
 .area-shangchuan1:before { content: "\e622"; }
 
+.area-ywc1:before { content: "\e6bb"; }
+
 .area-pause:before { content: "\e619"; }
 
 .area-play:before { content: "\e61a"; }
@@ -106,6 +118,8 @@
 .area-baocun:before { content: "\e691"; }
 
 .area-excel:before { content: "\e610"; }
+
+.area-dcl1:before { content: "\e606"; }
 
 .area-TXT:before { content: "\e668"; }
 
@@ -124,4 +138,6 @@
 .area-word1:before { content: "\e60c"; }
 
 .area-excel1:before { content: "\e617"; }
+
+.area-dcl:before { content: "\e61b"; }
 

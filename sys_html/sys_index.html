@@ -30,13 +30,13 @@
    <div class="tab" role="tabpanel">
         <!-- Nav tabs -->
         <ul class="nav nav-tabs" role="tablist">
-            <li role="presentation" class="active"><a href="#Section1" aria-controls="home" role="tab" data-toggle="tab">草稿箱</a></li>
+            <li role="presentation"><a href="#Section1" aria-controls="home" role="tab" data-toggle="tab">草稿箱</a></li>
             <li role="presentation"><a href="#Section2" aria-controls="profile" role="tab" data-toggle="tab">未发布</a></li>
-            <li role="presentation"><a href="#Section3" aria-controls="messages" role="tab" data-toggle="tab">已发布</a></li>
+            <li role="presentation" class="active"><a href="#Section3" aria-controls="messages" role="tab" data-toggle="tab">已发布</a></li>
         </ul>
         <!-- Tab panes -->
         <div class="tab-content tabs">
-            <div role="tabpanel" class="tab-pane fade in active" id="Section1">
+            <div role="tabpanel" class="tab-pane fade" id="Section1">
                  <div class="pt15 pb15">
                   <form class="form-horizontal">
                     <div class="row">
@@ -330,7 +330,7 @@
                     </ul>
                 </div>
             </div>
-            <div role="tabpanel" class="tab-pane fade" id="Section3">
+            <div role="tabpanel" class="tab-pane fade in active" id="Section3">
                  <div class="pt15 pb15">
                   <form class="form-horizontal">
                     <div class="row">
@@ -382,105 +382,116 @@
                     <table class="table table-striped">
                      <thead>
                       <tr>
-                        <th scope="col">创建学年学期</th>
-                        <th scope="col">评价体系</th>
-                        <th scope="col">推送学校（所）</th>
-                        <th scope="col">使用学校（所）</th>
-                        <th scope="col">评价类型</th>
-                        <th scope="col">评分方式</th>
-                        <th scope="col">操作</th>
+                        <th width="18%" scope="col">创建学年学期</th>
+                        <th width="21%" scope="col">评价体系</th>
+                        <th width="17%" scope="col">适用年级</th>
+                        <th width="9%" scope="col">推送学校（所）</th>
+                        <th width="12%" scope="col">推送状态</th>
+                        <th width="9%" scope="col">评价类型</th>
+                        <th width="8%" scope="col">评分方式</th>
+                        <th width="6%" scope="col">操作</th>
                       </tr>
                      </thead>
                      <tbody>
                       <tr>
                         <td>2017-2018学年度第一学期</td>
                         <td>初中生综合素质学期评价</td>
+                        <td><span>初一年级</span>，<span>初二年级</span>，<span>初三年级</span>，<span>高一年级</span></td>
                         <td>21</td>
-                        <td>12</td>
+                        <td><span class="text-info"><i class="icon_area area-dcl fz_14 mr5"></i>待处理</span></td>
                         <td>学期评价</td>
                         <td>等第制</td>
-                        <td><a href="sys_browse.html" class="icon_area area-chakan fz_14 mr20" title="查看"></a></td>
+                        <td><a href="sys_browse.html" class="icon_area area-chakan fz_14" title="查看"></a></td>
                       </tr>
                       <tr>
                         <td>2017-2018学年度第一学期</td>
                         <td>2016-2017学年第二学期小学日常评价</td>
+                        <td><span>初一年级</span>，<span>初二年级</span>，<span>初三年级</span>，<span>高一年级</span></td>
                         <td>21</td>
-                        <td>12</td>
+                        <td><span class="text-muted"><i class="icon_area area-jxz fz_14 mr5"></i>发布中</span></td>
                         <td>日常评价</td>
                         <td>百分制</td>
-                        <td><a href="sys_browse.html" class="icon_area area-chakan fz_14 mr20" title="查看"></a></td>
+                        <td><a href="sys_browse.html" class="icon_area area-chakan fz_14" title="查看"></a></td>
                        </tr>
                       <tr>
                         <td>2017-2018学年度第一学期</td>
                         <td>初中生综合素质学期评价</td>
+                        <td><span>初一年级</span>，<span>初二年级</span>，<span>初三年级</span>，<span>高一年级</span></td>
                         <td>21</td>
-                        <td>12</td>
+                        <td><span class="text-success"><i class="icon_area area-ywc1 fz_14 mr5"></i>已完成</span></td>
                         <td>学期评价</td>
                         <td>等第制</td>
-                        <td><a href="sys_browse.html" class="icon_area area-chakan fz_14 mr20" title="查看"></a></td>
+                        <td><a href="sys_browse.html" class="icon_area area-chakan fz_14" title="查看"></a></td>
                       </tr>
                       <tr>
                         <td>2017-2018学年度第一学期</td>
                         <td>2016-2017学年第二学期小学日常评价</td>
+                        <td><span>初一年级</span>，<span>初二年级</span>，<span>初三年级</span>，<span>高一年级</span></td>
                         <td>21</td>
-                        <td>12</td>
+                        <td><span class="text-danger"><i class="icon_area area-shibai fz_14 mr5"></i>发布失败</span><a data-toggle="modal" data-target="#library1" title="查看" class="icon_area area-txt02 ml10"></a></td>
                         <td>日常评价</td>
                         <td>百分制</td>
-                        <td><a href="sys_browse.html" class="icon_area area-chakan fz_14 mr20" title="查看"></a></td>
+                        <td><a href="sys_browse.html" class="icon_area area-chakan fz_14" title="查看"></a><a href="#" class="icon_area area-fabu fz_14 ml20" title="重新发布"></a><a href="#" class="icon_area area-shanchu fz_14 ml20" title="删除"></a></td>
                       </tr>
                       <tr>
                         <td>2017-2018学年度第一学期</td>
                         <td>初中生综合素质学期评价</td>
+                        <td><span>初一</span>，<span>初二</span>，<span>初三</span>，<span>高一</span></td>
                         <td>21</td>
-                        <td>12</td>
+                        <td><span class="text-info"><i class="icon_area area-dcl fz_14 mr5"></i>待处理</span></td>
                         <td>学期评价</td>
                         <td>等第制</td>
-                        <td><a href="sys_browse.html" class="icon_area area-chakan fz_14 mr20" title="查看"></a></td>
+                        <td><a href="sys_browse.html" class="icon_area area-chakan fz_14" title="查看"></a></td>
                       </tr>
                       <tr>
                         <td>2017-2018学年度第一学期</td>
                         <td>2016-2017学年第二学期小学日常评价</td>
+                        <td><span>初一</span>，<span>初二</span>，<span>初三</span>，<span>高一</span></td>
                         <td>21</td>
-                        <td>12</td>
+                        <td><span class="text-muted"><i class="icon_area area-jxz fz_14 mr5"></i>发布中</span></td>
                         <td>日常评价</td>
                         <td>百分制</td>
-                        <td><a href="sys_browse.html" class="icon_area area-chakan fz_14 mr20" title="查看"></a></td>
+                        <td><a href="sys_browse.html" class="icon_area area-chakan fz_14" title="查看"></a></td>
                       </tr>
                       <tr>
                         <td>2017-2018学年度第一学期</td>
                         <td>初中生综合素质学期评价</td>
+                        <td><span>初一</span>，<span>初二</span>，<span>初三</span>，<span>高一</span></td>
                         <td>21</td>
-                        <td>12</td>
+                        <td><span class="text-success"><i class="icon_area area-ywc1 fz_14 mr5"></i>已完成</span></td>
                         <td>学期评价</td>
                         <td>等第制</td>
-                        <td><a href="sys_browse.html" class="icon_area area-chakan fz_14 mr20" title="查看"></a></td>
+                        <td><a href="sys_browse.html" class="icon_area area-chakan fz_14" title="查看"></a></td>
                       </tr>
                       <tr>
                         <td>2017-2018学年度第一学期</td>
                         <td>2016-2017学年第二学期小学日常评价</td>
+                        <td><span>初一</span>，<span>初二</span>，<span>初三</span>，<span>高一</span></td>
                         <td>21</td>
-                        <td>12</td>
+                        <td><span class="text-danger"><i class="icon_area area-shibai fz_14 mr5"></i>发布失败</span><a data-toggle="modal" data-target="#library1" title="查看" class="icon_area area-txt02 ml10"></a></td>
                         <td>日常评价</td>
                         <td>百分制</td>
-                        <td><a href="sys_browse.html" class="icon_area area-chakan fz_14 mr20" title="查看"></a></td>
+                        <td><a href="sys_browse.html" class="icon_area area-chakan fz_14" title="查看"></a><a href="#" class="icon_area area-fabu fz_14 ml20" title="重新发布"></a><a href="#" class="icon_area area-shanchu fz_14 ml20" title="删除"></a></td>
                       </tr>
                       <tr>
                         <td>2017-2018学年度第一学期</td>
                         <td>初中生综合素质学期评价</td>
+                        <td><span>初一</span>，<span>初二</span>，<span>初三</span>，<span>高一</span></td>
                         <td>21</td>
-                        <td>12</td>
+                        <td><span class="text-muted"><i class="icon_area area-jxz fz_14 mr5"></i>发布中</span></td>
                         <td>学期评价</td>
                         <td>等第制</td>
-                        <td><a href="sys_browse.html" class="icon_area area-chakan fz_14 mr20" title="查看"></a></td>
+                        <td><a href="sys_browse.html" class="icon_area area-chakan fz_14" title="查看"></a></td>
                       </tr>
                       <tr>
                         <td>2017-2018学年度第一学期</td>
                         <td>2016-2017学年第二学期小学日常评价</td>
+                        <td><span>初一</span>，<span>初二</span>，<span>初三</span>，<span>高一</span></td>
                         <td>21</td>
-                        <td>12</td>
+                        <td><span class="text-success"><i class="icon_area area-ywc1 fz_14 mr5"></i>已完成</span></td>
                         <td>日常评价</td>
                         <td>百分制</td>
-                        <td><a href="sys_browse.html" class="icon_area area-chakan fz_14 mr20" title="查看"></a></td>
+                        <td><a href="sys_browse.html" class="icon_area area-chakan fz_14" title="查看"></a></td>
                       </tr>
                       </tbody>
                     </table>
@@ -503,6 +514,30 @@
     </div>
  </div>
 </div>
+
+<div class="modal fade" id="library1" tabindex="-1" role="dialog" aria-labelledby="library1Label" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content tab" role="tabpanel">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+                <h4 class="modal-title" id="myModalLabel">失败详情</h4>
+				
+			</div>
+			<div class="modal-body">
+                <p>失败详情失败详情</p>    
+                <p>失败详情失败详情</p>    
+                <p>失败详情失败详情</p>    
+                
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+</div>
+
 <!--模块化js--> 
 <script src="../js/sea.js"></script> 
 <script src="../js/seaconfig2.0.js"></script> 

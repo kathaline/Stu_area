@@ -544,8 +544,10 @@ padding:10px;}
 /*school_box base*/
 .school_box{ max-height:90px; overflow:hidden;}
 .school_box.auto{ max-height:none;}
-.school_one{ float:left; display:block; background:#f6f6f6; color:#333;}
-.school_one.active{ color: #fff !important;background-color: #0288d1;border-color: #0288d1;box-shadow:none;}
+.school_one{ float:left; color:#333;}
+.school_one.btn{ display:block; background:#f6f6f6;}
+.school_one.btn.active{ color: #fff !important;background-color: #0288d1;border-color: #0288d1;box-shadow:none;}
+.school_more{display: inline-block;}
 .school_more:after{ content:"展开更多"}
 .school_more.zd:after{ content:"收起更多"}
 .gzdist_mould.table >thead >tr >th{ padding:0; text-align:center; height:50px; line-height:50px; border:1px solid #d8d8d8; border-right:0;}
