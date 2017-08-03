@@ -28,6 +28,7 @@ seajs.config({
 	'valid':'plug-in/formvalid/validator',//
 	'tree':'plug-in/treelist/tree-list',//
 	'data_v':'common_cadr/data_view',
+	'slide':'plug-in/slide/jquery.SuperSlide.2.1.1',
   },
 
   // 路径配置

@@ -75,7 +75,7 @@ a:hover,a:focus {color:#0288d1;}
 .error_color{color:#F0485F!important; }
 
 /*警告颜色覆盖*/
-.text-warning{ color:#eeaa34;}
+.text-warning{ color:#faab21;}
 /*标签及徽章背景色优先级*/
 .label-primary.badge{background-color: #337ab7;}
 .label-success.badge{background-color: #5cb85c;}
@@ -619,7 +619,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .wel-bg{z-index:0; height:463px; position:absolute; bottom:50px; width:100%; background:url(../images/welcome_bg.png) bottom center no-repeat #eaeaea;}
 /*档案袋*/
 .grow_bg{background:url(../images/dang-bg.png) 0 0 no-repeat;width: 128px; height: 150px;}
-/*档案袋详情*/
+/*成长档案袋*/
 .grow_file{ margin-right:100px;}
 .grow_date{ position:fixed; right:0; top:246px; width:90px;}
 .grow_date >ul>li{ margin:5px 0; padding-left:5px; background:none; border:none;box-shadow:none; border-left:5px solid #999;}
@@ -665,3 +665,23 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .tree_txt p{ padding-left:20px;text-indent:-20px;} 
 .tree_tips{ height:40px; line-height:40px;}
 .tree_tips .fl{ font-weight:bold; color:#333;}
+/*档案袋详情*/
+.img-rounded.grow-penc{ left:50%; margin-left:-78px;}
+/*学业水平*/
+.count-alls { background:#f8f8f8; overflow:hidden;}
+.count-alls .all-score{ border-right:1px solid #e6f0f5;}
+.count-alls .all-score .score-one{ width:auto !important;}
+
+.score-one{text-align:center; padding:15px 0 0; height:92px; font-size:13px; color:#fff;}
+.all-score .score-one{ background:url(../images/score-total.png) center center no-repeat;}
+.picScroll-left{ position:relative;overflow:hidden; border-left:1px solid #fff;}
+.picScroll-left .score-one{ background:url(../images/score-ave.png) center center no-repeat; float:left;}
+.count-alls .carousel-control{ width:0; text-shadow:none;}
+/*荣誉-实践*/
+.img-honor{ width:200px; height:146px;}
+.img-tit{ width:80px; height:80px;border: 2px solid #c1e9fb;}
+.media-left.po_r .badge.po_ab{ left:60px; top:60px;}
+/*评语*/
+.combox {max-width:100%;  border: 1px solid #e0e0e0;  -webkit-box-shadow:none; box-shadow:none; padding:0;}
+.combox.right > .arrow { top:28px;}
+.arrow.arw-info:after{border-right-color: #f1f6f9 !important;}

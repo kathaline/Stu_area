@@ -1,10 +1,10 @@
 
 @font-face {font-family: "icon_area";
-  src: url('iconfont.eot?t=1501232991835'); /* IE9*/
-  src: url('iconfont.eot?t=1501232991835#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('iconfont.woff?t=1501232991835') format('woff'), /* chrome, firefox */
-  url('iconfont.ttf?t=1501232991835') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('iconfont.svg?t=1501232991835#icon_area') format('svg'); /* iOS 4.1- */
+  src: url('iconfont.eot?t=1501666921040'); /* IE9*/
+  src: url('iconfont.eot?t=1501666921040#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1501666921040') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1501666921040') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1501666921040#icon_area') format('svg'); /* iOS 4.1- */
 }
 
 .icon_area {
@@ -71,6 +71,8 @@
 
 .area-gantanhao:before { content: "\e6a4"; }
 
+.area-left:before { content: "\e670"; }
+
 .area-fabu:before { content: "\e604"; }
 
 .area-import:before { content: "\e736"; }
@@ -93,11 +95,9 @@
 
 .area-zengjia:before { content: "\e616"; }
 
-.area-zanwushuju:before { content: "\e610"; }
+.area-pingyu:before { content: "\e608"; }
 
 .area-shangchuan1:before { content: "\e622"; }
-
-.area-zanwushuju1:before { content: "\e606"; }
 
 .area-ywc1:before { content: "\e6bb"; }
 
@@ -106,6 +106,8 @@
 .area-play:before { content: "\e61a"; }
 
 .area-baocun:before { content: "\e691"; }
+
+.area-right:before { content: "\e606"; }
 
 .area-qingdan:before { content: "\e602"; }
 
@@ -119,7 +121,11 @@
 
 .area-shouye:before { content: "\e835"; }
 
+.area-kehouzuoye_pingyu:before { content: "\e615"; }
+
 .area-dcl:before { content: "\e61b"; }
 
 .area-wushuju1:before { content: "\e642"; }
+
+.area-rongyu1:before { content: "\e64d"; }
 
