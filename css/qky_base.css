@@ -8,7 +8,7 @@ body{font-family: Microsoft YaHei,"Hiragino Sans GB W3", Helvetica, Arial, sans-
 .qkybody.app{ padding:94px 0 50px;}
 .qkyff_fluid{ background:#fff; width:100%;}
 .navbar-fixed-top {border: 0;}
-.areabody{background:#eaeaea;position:relative; left: 0; top: 0; width: 100%; height: 100%;}
+.areabody{background:#eaeaea;position:relative; left: 0; top: 0; width: 100%; height: 100%;word-break: break-all;}
 .qkycadr{ background:#fff; border:1px solid #d8d8d8;}
 
 /*整体宽度档位提供*/
