@@ -566,7 +566,7 @@ ul,li{ padding:0; margin:0; list-style:none;}
 .menu_l > li{border-bottom:4px solid #2b3544; border-top:1px solid #414b5c;}
 .menu_l li:first-child{border-top:0;}
 .menu_l li a{ display:block; height:60px; line-height:60px;  padding:0 20px; color:#a0acbf;}
-.menu_l li a:hover{ text-decoration:none;color:#fff;}
+.menu_l li a:hover{ text-decoration:none;}
 .menu_l li a:focus{text-decoration:none;}
 .menu_l.menu01 li.active a,.menu_l .menu02 li.active a{ border-left:4px solid #27b0f2; background:#2f3949;color:#fff; }
 .menu02{background:#323d4e;}
