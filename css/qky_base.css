@@ -297,7 +297,7 @@ ul.error_tips li{ padding:4px 0 ; margin:0;}
 .help-block{ font-size:12px; }
 .form-control[readonly]{cursor:default;}
 /*表单校验样式覆盖*/
-.form-control-feedback{ height:32px; line-height:32px; width:auto;}
+.form-control-feedback{ height:32px; line-height:32px; width:auto;min-width: 30px;}
 
 /*下拉组改装*/
 .qkydropdown{ height:30px;}
