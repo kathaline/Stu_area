@@ -42,7 +42,7 @@ define(function(require) {
 					//1.初始化数据
 					
 					
-					$(".nav_logo img").attr("src",opts.logosrc);
+					/*$(".nav_logo img").attr("src",opts.logosrc);*/
 					$(".nav_pjname").html(opts.pjname);
 					$(".nav_pjname").css("color",opts.themetype.pjnameColor);
 					$(".other_name").html(opts.tea_info.name);
@@ -248,8 +248,8 @@ define(function(require) {
 	//超出一半后折起来
 	tonavhtml =function(){
 		var leftwidth;
-		if(opts.morebtn)leftwidth=$(".navbtn").outerWidth(true)+$(".nav_pjname").outerWidth(true)+$(".nav_logo").width()+1;
-		else leftwidth=$(".nav_pjname").outerWidth(true)+$(".nav_logo").width()+1;
+		if(opts.morebtn)leftwidth=$(".navbtn").outerWidth(true)+$(".nav_pjname").outerWidth(true)/*+$(".nav_logo").width()*/+1;
+		else leftwidth=$(".nav_pjname").outerWidth(true)/*+$(".nav_logo").width()*/+1;
 		if(navigator.userAgent.indexOf("MSIE 8.0")>0) leftwidth=leftwidth+40;
 		var havewidth=$("#navbar").width()-(leftwidth+$(".nav_other").width());
 		havewidth=havewidth/2;

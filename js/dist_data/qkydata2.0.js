@@ -6,7 +6,7 @@
 define({
 	navdata:{/*导航数据*/
 	    htmlsrc:"mould_html/qkynav2.0.html",//头部模板获取异步地址
-		logosrc:"images/nav_logo/qky-logo.png",//logo来源路径
+		/*logosrc:"images/nav_logo/qky-logo.png",*///logo来源路径
 		pjname:"综合素质评价",//应用名
 		theme:"navbar-default",//主题
 		themetype:{
@@ -17,7 +17,7 @@ define({
 		navli_j:[
 			{name:"评价信息",attrcont:"href='index-sysm.html'",isactive:false},
 			{name:"数据监控",attrcont:"href='index.html'",isactive:true},
-			{name:"数据分析",attrcont:"href='index-da.html'",isactive:false},
+			/*{name:"数据分析",attrcont:"href='index-da.html'",isactive:false},*/
 			{name:"成长档案袋",attrcont:"href='index-grow.html'",isactive:false},
 		],//主导航条
 		
